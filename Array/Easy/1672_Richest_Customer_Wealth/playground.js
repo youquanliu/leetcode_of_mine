@@ -37,23 +37,15 @@
 //solution one, a max variable for max in loop
 //tip, reduce function, the optional second variable 0 to indicate the start position. 
 var maximumWealth = function (accounts) {
-    let max = 0;
-    for (let i = 0; i < accounts.length; i++) {
-        let sum = accounts[i].reduce((a, b) => a + b, 0);
-        max > sum ? max : max = sum;
-    }
-    return max;
+
 }
 //solution two, array to store sum, and find the max into it
 var maximumWealth2 = function (accounts) {
-    welthArr = [];
-    accounts.forEach(acc => {
-        welthArr.push(acc.reduce((a, b) =>
-            a + b, 0
-        ))
-    });
-    return Math.max(...welthArr)
+
 }
 var accounts = [[1, 2, 3], [3, 2, 1]]
 console.log(maximumWealth2(accounts))
 // Output: 6
+
+let sum = accounts[0].reduce((a, b) => a + b, 0);
+console.log(sum)

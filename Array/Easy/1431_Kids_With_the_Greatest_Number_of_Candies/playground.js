@@ -35,12 +35,16 @@
 //Tips: Math.max(...nums)
 const kidsWithCandies = (candies, extraCandies) => {
 
+
 }
 //solution two, map through with expression
 //curly braces in map is a function, a return inside braces is a must 
 const kidsWithCandies2 = (candies, extraCandies) => {
 
 }
+
+
 var candies = [2, 3, 5, 1, 3];
 console.log(kidsWithCandies2(candies, 3));
-// Output: [true,true,true,false,true]
+//Output: [true, true, true, false, true]
+

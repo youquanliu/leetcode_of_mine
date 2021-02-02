@@ -35,5 +35,4 @@ var maxProduct = function (nums) {
     const secondMax = Math.max(...nums);
 
     return (max - 1) * (secondMax - 1)
-
 }

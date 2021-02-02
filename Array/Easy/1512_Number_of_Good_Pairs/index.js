@@ -4,7 +4,7 @@
 
 // Return the number of good pairs.
 
- 
+
 
 // Example 1:
 
@@ -20,7 +20,7 @@
 
 // Input: nums = [1,2,3]
 // Output: 0
- 
+
 
 // Constraints:
 
@@ -41,3 +41,6 @@ var numIdenticalPairs = function (nums) {
     }
     return time
 }
+
+var nums = [1, 2, 3, 1, 1, 3];
+console.log(numIdenticalPairs(nums))

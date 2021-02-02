@@ -23,8 +23,11 @@
 // 1 <= nums[i] <= 10^3
 
 //Solution, find the max two
-var nums = [3, 4, 5, 2];// Output: 12 
+
 var maxProduct = function (nums) {
 
 }
+
+var nums = [3, 4, 5, 2];// Output: 12 
+
 console.log(maxProduct(nums))
