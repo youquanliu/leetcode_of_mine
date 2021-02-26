@@ -31,5 +31,5 @@ var numIdenticalPairs = function (nums) {
 
 }
 
-var nums = [1, 2, 3, 1, 1, 3];// Output: 4
+var nums = [7, 8, 9, 7, 7, 9];// Output: 4
 console.log(numIdenticalPairs(nums))

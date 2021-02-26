@@ -34,7 +34,7 @@
 //solution, find max, compare each with max;
 //Tips: Math.max(...nums)
 const kidsWithCandies = (candies, extraCandies) => {
-
+    
 
 }
 //solution two, map through with expression
@@ -45,6 +45,6 @@ const kidsWithCandies2 = (candies, extraCandies) => {
 
 
 var candies = [2, 3, 5, 1, 3];
-console.log(kidsWithCandies2(candies, 3));
+console.log(kidsWithCandies(candies, 3));
 //Output: [true, true, true, false, true]
 

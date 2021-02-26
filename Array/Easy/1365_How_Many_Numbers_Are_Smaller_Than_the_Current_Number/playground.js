@@ -1,4 +1,5 @@
-// Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
+// Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
+// That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
 
 // Return the answer in an array.
 
@@ -39,26 +40,11 @@
 // };
 
 var smallerNumbersThanCurrent = function (nums) {
-    let len = nums.length;
-    let sorted = [...nums].sort((a, b) => { return b - a })
-    let result = []
-    let map = {}
-    console.log(object)
-    for (let i = 0; i < len; i++) {
-        map[sorted[i]] = i
-    }
-    for (let i = 0; i < len; i++) {
-        console.log('a:', map[nums[i]])
-        console.log('b:', len - 1 - map[nums[i]])
-        result.push(len - 1 - map[nums[i]])
-    }
 
-    return map
+
 };
 var nums = [8, 1, 2, 2, 3]
-// Output: [4,0,1,1,3]
+
 
 console.log(smallerNumbersThanCurrent(nums))
 
-// var objec = { 1: 2, 3: 4, 5: 6 };
-// console.log(objec[1])
