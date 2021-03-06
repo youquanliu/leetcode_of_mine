@@ -14,3 +14,10 @@
 
 //three ways
 //string, array, object
+
+function validAnagram1(a, b) {
+
+}
+var s = "anagraml";
+var t = "nagaraml";
+console.log(validAnagram1(s, t))

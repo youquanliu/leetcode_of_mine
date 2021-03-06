@@ -26,8 +26,7 @@
 var shuffle = function (nums, n) {
     let result = [];
     for (let i = 0; i < n; i++) {
-        result.push(nums[i]);
-        result.push(nums[i + n]);
+        result = [...result, nums[i], nums[i + n]]
     }
     return result
 }
@@ -42,4 +41,3 @@ var shuffle2 = function (nums, n) {
     }
     return output;
 }
-
