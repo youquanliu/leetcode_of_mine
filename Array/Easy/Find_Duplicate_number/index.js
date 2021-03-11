@@ -48,4 +48,4 @@ var findDuplicate = function (nums) {
 };
 
 
-console.log(findDuplicate(arr))
+console.log(fidDuplicateNum2(arr))

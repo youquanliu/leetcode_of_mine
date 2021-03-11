@@ -29,8 +29,8 @@ function findOutlier(integers) {
 }
 
 function findOutlier2(nums) {
-    
+
 }
 
-let arr = [2, 6, 8, 3, 10];
+let arr = [2, 5, 6, 8, 3, 10];
 console.log(findOutlier2(arr))
