@@ -41,18 +41,30 @@ var twoSum2 = function (nums, target) {
     }
     for (let i = 0; i < nums.length; i++) {
         let complement = target - nums[i];
-        let found = nums.indexOf(complement);
+        let found = obj[complement];
 
-        if (found !== -1 && found != i) {
+        if (found !== undefined && found != i) {
             return [i, found];
         }
     }
     return [0, 0]
 }
+
+var twoSum3 = function (nums, target) {
+    if (nums.length == 2) return [0, 1];
+    let obj = {};
+    for (let i = 0; i < nums.length; i++) {
+        let complement = target - nums[i];
+        let found = obj[complement];
+        console.log(found, complement)
+        if (found != undefined) return [i, found];
+        else obj[nums[i]] = i;
+    }
+}
 var nums = [2, 5, 3, 5];
 var target = 10;
 
-console.log(twoSum2(nums, target))
+console.log(twoSum3(nums, target))
 
 // 2  1,
 // 5  2,
