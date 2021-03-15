@@ -44,18 +44,19 @@ var strStr = function (haystack, needle) {
 };
 
 var strStr2 = function (haystack, needle) {
-    if (needle == '') return 0;
+    if (needle === '' || needle === haystack) return 0;    // the only mandatory check here is (needle === '')
+    if (haystack.length < needle.length) return -1;    // the other ones are for efficiency
 
     //loop haystack
-    for (let i = 0; i < haystack.length; i++) {
+    for (let i = 0; i < haystack.length - needle.length + 1; i++) {
         //once haystack[i] == needle[0]
-        if (haystack[i] == needle[0]) {
+        if (haystack[i] === needle[0]) {
             //loop through needle.length
             for (let j = 0; j < needle.length; j++) {
                 //haystack[i+j] == needle[j]
                 if (haystack[i + j] !== needle[j]) {
                     break;
-                } else {
+                } else if (j == needle.length - 1) {
                     return i;
                 }
             }
@@ -63,7 +64,7 @@ var strStr2 = function (haystack, needle) {
     }
     return -1;
 };
-let haystack = "hello", needle = "ll";
+let haystack = "abc", needle = "c";
 // Output: 2
 
 console.log(strStr2(haystack, needle))
