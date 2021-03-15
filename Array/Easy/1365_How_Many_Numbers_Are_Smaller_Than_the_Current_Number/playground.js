@@ -36,7 +36,6 @@
 // const smallerNumbersThanCurrent2 = nums => {
 //     //double loop
 
-
 // };
 
 var smallerNumbersThanCurrent = function (nums) {

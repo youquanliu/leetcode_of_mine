@@ -33,21 +33,10 @@ var finalPrices = function (prices) {
         return discount ? el - discount : el;
     })
 };
-var finalPrices2 = function (prices) {
-    const stack = [];
-    for (let i = 0; i < prices.length; i++) {
-        const curr = prices[i];
-        while (stack.length && prices[stack[stack.length - 1]] >= curr) {
-            prices[stack.pop()] -= curr;
-        }
-        stack.push(i);
-        console.log('stack:', stack)
-    }
-    return prices;
-};
+
 
 let prices = [8, 4, 6, 2, 3];
 // Output:     [4,2,4,2,3]
 
-console.log(finalPrices2(prices))
+console.log('result: ', finalPrices2(prices))
 

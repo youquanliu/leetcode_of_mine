@@ -56,7 +56,6 @@ var twoSum3 = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         let complement = target - nums[i];
         let found = obj[complement];
-        console.log(found, complement)
         if (found != undefined) return [i, found];
         else obj[nums[i]] = i;
     }
