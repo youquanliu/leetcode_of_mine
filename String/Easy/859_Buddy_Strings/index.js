@@ -49,8 +49,8 @@ var buddyStrings = function (a, b) {
         }
     }
     if (diffCount == 0) {               //No different char         'abc' ,'abc'
-        const s = new Set(A.split('')); //remove dup numbers  ie.'aaa' -> 'a'
-        return s.size < A.length;      //'a'.len < 'aaa'length
+        const s = new Set(a.split('')); //remove dup numbers  ie.'aaa' -> 'a'
+        return s.size < a.length;      //'a'.len < 'aaa'length
     }
     if (diffCount != 2) {   //'abcd'   'dcba'  need more than one swap
         return false

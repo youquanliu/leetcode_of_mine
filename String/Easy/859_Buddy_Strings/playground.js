@@ -40,37 +40,31 @@
 //length?
 //How many difference? diffCount !==2 return false; diffCount == 2  return first of A == second of B   //abcd abab
 var buddyStrings = function (a, b) {
+    if (a.length !== b.length) return false;
 
-    if (a.length !== b.length) return false; //'ab'.length !== 'abc'.length  false
-
-    let diffCount = 0,
-        fst = -1,
-        sec = -1;
-
-    for (let i = 0; i < a.length; i++) {  //'abcd' vs 'acbd' fst=1/sec=2/diffCount=2
-        if (a[i] != b[i]) {
-            if (fst == -1) {
-                fst = i;
-            } else {
-                sec = i;
-            }
-            diffCount++;
+    if (a == b) {
+        let s = new Set(a);
+        return s.size !== a.length;
+    }
+    
+    let diff = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            diff.push(i);
         }
     }
-    if (diffCount == 0) {               //No different char         'abc' ,'abc'
-        const s = new Set(A.split('')); //remove dup numbers  ie.'aaa' -> 'a'
-        return s.size < A.length;      //'a'.len < 'aaa'length
-    }
-    if (diffCount != 2) {   //'abcd'   'dcba'  need more than one swap
-        return false
-    } else {
+    let [fst, sec] = diff;
+
+    if (diff.length == 2 && a.length == b.length) {
         return a[fst] == b[sec] && a[sec] == b[fst];
     }
+    return false;
 };
 
-const a = 'ab', b = 'ba';
-//console.log(buddyStrings(a, b))
+const a = 'aacba', b = 'aabcn';
+console.log(buddyStrings(a, b))
 
 
 
-console.log(`fst: ${fst}, sec: ${sec}, cnt: ${diffCount}`)
+//console.log(`fst: ${fst}, sec: ${sec}, cnt: ${diffCount}`)
+
