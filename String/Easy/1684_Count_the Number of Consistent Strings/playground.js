@@ -26,7 +26,7 @@
 // words[i] and allowed contain only lowercase English letters.
 
 
-//心得是要找到word的尽头，word.length
+//心得是要找到word的尽头，word.length 和使用break;
 //my way,object slowest
 const countConsistentStrings = (allowed, words) => {
 
