@@ -38,3 +38,4 @@ var countMatches = function (items, ruleKey, ruleValue) {
 
 let items = [["phone", "blue", "pixel"], ["computer", "silver", "phone"], ["phone", "gold", "iphone"]];
 console.log(countMatches(items, "color", "blue"))
+
