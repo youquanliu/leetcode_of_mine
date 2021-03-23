@@ -58,3 +58,26 @@ var buddyStrings = function (a, b) {
         return a[fst] == b[sec] && a[sec] == b[fst];
     }
 };
+
+
+var buddyStrings2 = function (a, b) {
+    if (a.length !== b.length) return false;
+
+    if (a == b) {
+        let s = new Set(a);
+        return s.size !== a.length;
+    }
+    
+    let diff = [];
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) {
+            diff.push(i);
+        }
+    }
+    let [fst, sec] = diff;
+
+    if (diff.length == 2 && a.length == b.length) {
+        return a[fst] == b[sec] && a[sec] == b[fst];
+    }
+    return false;
+};

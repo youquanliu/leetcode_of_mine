@@ -26,11 +26,11 @@
 
 var twoSum1 = function (nums, target) {
 
-
 };
 var twoSum2 = function (nums, target) {
 
 };
+
 //One Loop
 var twoSum3 = function (nums, target) {
 
@@ -39,5 +39,5 @@ var twoSum3 = function (nums, target) {
 var nums = [2, 5, 3, 5];
 var target = 10;
 //output [1,3]
-console.log(twoSum1(nums, target))
+console.log(twoSum3(nums, target))
 

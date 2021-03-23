@@ -25,7 +25,10 @@
 //Solution, find the max two
 
 var maxProduct = function (nums) {
-
+    let sortedNums = [...nums].sort();
+    let first = sortedNums.pop();
+    let second = sortedNums.pop();
+    return [first,second]
 }
 
 var nums = [3, 4, 5, 2];// Output: 12 

@@ -4,19 +4,17 @@
 
 // Return the number of good pairs.
 
-
 // Example 1:
-
 // Input: nums = [1,2,3,1,1,3]
 // Output: 4
 // Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
-// Example 2:
 
+// Example 2:
 // Input: nums = [1,1,1,1]
 // Output: 6
 // Explanation: Each pair in the array are good.
-// Example 3:
 
+// Example 3:
 // Input: nums = [1,2,3]
 // Output: 0
 
@@ -31,5 +29,5 @@ var numIdenticalPairs = function (nums) {
 
 }
 
-var nums = [7, 8, 9, 7, 7, 9];// Output: 4
+var nums = [7, 8, 9, 7, 7, 9, 7];// Output: 4
 console.log(numIdenticalPairs(nums))
