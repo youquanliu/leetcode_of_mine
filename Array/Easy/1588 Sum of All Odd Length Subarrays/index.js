@@ -49,7 +49,26 @@ var sumOddLengthSubarrays = function (arr) {
     return sum
 };
 
+const sumOdd = (arr) => {
+    let total = 0;
+    //a loop go through arr start from 0; idx:i
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+            if ((j - i) % 2 == 0) {
+                for (let x = i; x <= j; x++) {
+                    total += arr[x];
+                }
+            }
+        }
+    }
+    return total
+    //second loop start from i
+    //idx diff is an odd number?
+    //yes, sum of odd length, add sum to total sum
+}
+
+
 let arr = [1, 4, 2, 5, 3];
 // Output: 58
-console.log(sumOddLengthSubarrays(arr))
+console.log(sumOdd(arr))
 

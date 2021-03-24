@@ -51,4 +51,8 @@ var isToeplitzMatrix = function (matrix) {
 let matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]];
 //Output: true
 
-console.log(isToeplitzMatrix(matrix))
+console.log(isToeplitzMatrix2(matrix))
+
+//1234
+//5123
+//9512

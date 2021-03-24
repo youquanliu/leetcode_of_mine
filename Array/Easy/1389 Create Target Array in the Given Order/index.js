@@ -50,6 +50,7 @@ var createTargetArray = function (nums, index) {
     }
     return target
 };
+
 let nums = [0, 1, 2, 3, 4], index = [0, 1, 2, 2, 1];
-console.log(createTargetArray(nums, index))
+console.log(createTargetArray2(nums, index))
 // Output: [0,4,1,3,2]

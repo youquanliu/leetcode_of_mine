@@ -37,5 +37,7 @@ let arr = [1, 0, 2, 3, 0, 4, 5, 0];
 // Output: null
 //the input array is modified to: [1,0,0,2,3,0,0,4]
 
-arr.splice(arr.length - 1, 1);
+
+// arr.splice(arr.length - 1, 1);
+console.log(duplicateZeros2(arr))
 console.log(arr)
