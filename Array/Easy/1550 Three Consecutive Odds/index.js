@@ -36,5 +36,5 @@ const threeConsecutiveOdds2 = arr => {
 }
 
 let arr = [1, 2, 34, 3, 4, 5, 7, 23, 12];
-console.log(threeConsecutiveOdds2(arr))
+console.log(threeConsecutiveOdds3(arr))
 // Output: true

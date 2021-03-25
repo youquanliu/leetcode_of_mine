@@ -32,19 +32,36 @@
 // 1 <= nums.length <= 100
 // -100 <= nums[i] <= 100
 
+
+//Calculate cumulative sum as shown in the problem description, maintain a variable which tracks the
+//minimum cumulative sum. 
+
+//If minimum cumulative sum is less than zero,we need positive equivalent of cum_sum + 1 to make the total sum positive.
+
+// Else, 1 is the least. Hence, return as calculated.
+
 var minStartValue = function (nums) {
-    let sum = 0;
-    let min = 0;
+    let cum_sum = 0;
+    let min = 1;
     for (let i = 0; i < nums.length; i++) {
-        sum += nums[i];
-        min = Math.min(min, sum);
+        cum_sum += nums[i];
+        min = Math.min(min, cum_sum);
     }
     if (min == 1) return 1;
     return (Math.abs(min)) + 1;
 };
-
+var minStartValue2 = function (nums) {
+    let min = 1, cum_sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+        cum_sum += nums[i];
+        min = Math.min(min, cum_sum);
+    }
+    if (min === 1) return 1;
+    return Math.abs(min) + 1;
+}
 let nums = [-3, 2, -3, 4, 2];
-console.log(minStartValue(nums));
+//nums = [1,2,-3,-5,4]
+console.log(minStartValue2(nums));
 // Output: 5
 
 

@@ -25,15 +25,16 @@
 // Input: s = "{[]}"
 // Output: true
 
+let mapper = {
+    '(': ')',
+    '[': ']',
+    '{': '}'
+}
 var isValid = function (s) {
     //stack[]
     let stack = [];
     //obj {} () []
-    let mapper = {
-        '(': ')',
-        '[': ']',
-        '{': '}'
-    }
+
     //loop s
     for (const key in s) {
         const currParenthese = s[key];
@@ -55,6 +56,7 @@ var isValid = function (s) {
     if (stack.length > 0) return false
     return true;
 };
-let s = "{[()]}";
-console.log(isValid(s))
+
+let s = "{[(])}";
+console.log(isValid2(s))
 // Output: false

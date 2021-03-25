@@ -63,7 +63,23 @@ const largeGroupPositions2 = function (S) {
     }
     return result
 }
+const largeGroupPositions3 = function (S) {
+    let count = 1, start = 0, result = [];
+    for (let i = 1; i < S.length; i++) {
+        if (S[i] === S[i - 1]) {
+            count++;
+            if (i == S.length - 1 && count >= 3) result = [...result, [start, start + count - 1]];
 
+        } else if (S[i] !== S[i - 1]) {
+            if (count >= 3) {
+                result = [...result, [start, start + count - 1]];
+            }
+            start = i;
+            count = 1;
+        }
+    }
+    return result;
+}
 let s = "abbxxxxzzy";
 console.log(largeGroupPositions3(s))
 // Output: [[3,6]]
