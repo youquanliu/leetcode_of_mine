@@ -65,7 +65,7 @@ const largeGroupPositions2 = function (S) {
 }
 
 let s = "abbxxxxzzy";
-console.log(largeGroupPositions4(s))
+console.log(largeGroupPositions3(s))
 // Output: [[3,6]]
 
 //start 0, res[]
