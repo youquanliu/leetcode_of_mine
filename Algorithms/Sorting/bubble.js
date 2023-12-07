@@ -2,6 +2,7 @@ const randomArray = (length, max) =>
   [...new Array(length)].map(() => Math.round(Math.random() * max));
 
 let arr = randomArray(10, 99);
+let arr2 = [54, 99, 3, 12, 45, 0, 2];
 
 const swap = (arr, a, b) => {
   const temp = arr[a];
@@ -43,4 +44,3 @@ const bubbleSort2 = (arr) => {
 
 console.log("original arr: ", arr);
 // console.log(bubbleSort(arr));
-console.log(bubbleSort2(arr));
