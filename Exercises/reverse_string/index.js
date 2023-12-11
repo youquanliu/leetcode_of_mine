@@ -24,7 +24,6 @@ const reverseString2 = (str) => {
 
 //Iterate string and add it to new result string
 const reverseString3 = (str) => {
-  debugger;
   let reversed = "";
 
   for (let char of str) {

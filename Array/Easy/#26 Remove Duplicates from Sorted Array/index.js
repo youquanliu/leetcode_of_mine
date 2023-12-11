@@ -36,23 +36,23 @@
 // nums is sorted in ascending order.
 
 var removeDuplicates = function (nums) {
-    // Two indexes  slow && fast
-    // point to same value, f++
-    // point to diff value, s & f++
-    // fast reach the end of arr, return slow
+  // Two indexes  slow && fast
+  // point to same value, f++
+  // point to diff value, s & f++
+  // fast reach the end of arr, return slow
 
-    let slow = 0;
-    const size = nums.length;
-    for (let fast = 0; fast < size; fast++) {
-        if (nums[fast] !== nums[slow]) {
-            slow++;
-            nums[slow] = nums[fast];
+  let slow = 0;
+  const size = nums.length;
+  for (let fast = 0; fast < size; fast++) {
+    if (nums[fast] !== nums[slow]) {
+      slow++;
+      nums[slow] = nums[fast];
 
-            //or nums[++slow] = nums[fast];
-        }
+      //or nums[++slow] = nums[fast];
     }
-    return slow + 1, nums;
-}; 
+  }
+  return slow + 1, nums;
+};
 
 
 
