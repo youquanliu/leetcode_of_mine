@@ -7,3 +7,13 @@ const str2 = "fairy";
 
 console.log(Object.keys(obj), Object.values(obj), Object.entries(obj));
 console.log(str2.slice(1));
+
+let recursionFunction = (n, dec = 1) => {
+  if (n === 0) {
+    return;
+  }
+  console.log(n);
+  recursionFunction(n - dec);
+};
+
+recursionFunction(10);
