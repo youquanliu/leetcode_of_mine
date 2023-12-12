@@ -18,6 +18,13 @@
 //       '####'
 
 //Image we are creating a matrix with numbers of rows and column
+
+// + represents a space ' '
+// #++++
+// ##+++
+// ###++
+// ####+
+// #####
 let steps = (n) => {
   for (let rowNum = 0; rowNum < n; rowNum++) {
     let stair = "";
@@ -52,3 +59,4 @@ let recirsopmSteps = (n, row = 0, stair = "") => {
 };
 
 steps(7);
+
