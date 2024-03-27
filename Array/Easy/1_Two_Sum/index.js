@@ -54,12 +54,11 @@ var twoSum2 = function (nums, target) {
   return [0, 0];
 };
 
-var nums = [3, 2, 4, 3];
+var nums = [2, 1, 3];
 var target = 6;
 
 // y = target - x
 
-console.log(twoSum2(nums, target));
 
 // 2  1,
 // 5  2,

@@ -9,6 +9,9 @@
 //   fib(4) === 3
 
 let fibonacci = (n) => {
+  if (n < 2) {
+    return n;
+  }
   let fibResult = [0, 1];
   for (let i = 2; i <= n; i++) {
     let nextInt = fibResult[i - 2] + fibResult[i - 1];
@@ -16,7 +19,6 @@ let fibonacci = (n) => {
   }
   return fibResult[n];
 };
-
 
 let slowFib2 = (n) => {
   if (n < 2) {
@@ -52,5 +54,5 @@ function memoize(fn) {
 
 const fastFib = memoize(slowFib);
 
-console.log(fastFib(30));
-//console.log(slowFib2(30));
+//console.log(fastFib(30));
+// console.log(slowFib2(10));

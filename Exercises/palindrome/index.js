@@ -8,7 +8,6 @@
 //   palindrome("abcdefg") === false
 
 str = "nevereereven";
-
 //Two pointers, one loop
 function palindrome(str) {
   let i = 0;

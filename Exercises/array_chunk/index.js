@@ -16,7 +16,6 @@ let chunk = (a, size) => {
   return result;
 };
 
-let chunk2 = (arr, size) => {};
 let arr12 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(arrayChunk(arr12, 3));
+console.log("chunk: ", chunk(arr12, 3));

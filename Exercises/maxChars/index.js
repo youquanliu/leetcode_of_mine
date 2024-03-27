@@ -5,8 +5,6 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-let str = "caple pabcccdp";
-
 const maxChar = (str) => {
   let repeatedChar = "";
   let maxTimes = 0;
@@ -46,5 +44,8 @@ const maxChar1 = (str) => {
   return maxChar;
 };
 
-console.log(maxChar1(str));
+// console.log(maxChar1(str));
+
+let str = "caplle pabcccdp";
+
 

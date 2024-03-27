@@ -66,7 +66,7 @@ var findLength = function (nums, k) {
     console.log("outside while", current);
 
     answer = Math.max(answer, right - left + 1);
-  }d
+  }
   return answer;
 };
 
