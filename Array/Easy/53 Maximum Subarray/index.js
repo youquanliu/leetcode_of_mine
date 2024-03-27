@@ -37,5 +37,5 @@ var maxSubArray = function (nums) {
 let nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 let nums2 = [5, 4, -1, 7, 8]
 // Output: 23
-console.log(maxSubArray(nums2))
+console.log(maxSubArray(nums))
 // Output: 6

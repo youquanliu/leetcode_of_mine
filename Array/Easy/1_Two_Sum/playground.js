@@ -24,20 +24,69 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
-var twoSum1 = function (nums, target) {
-
-};
-var twoSum2 = function (nums, target) {
-
-};
+var twoSum1 = function (nums, target) {};
+var twoSum2 = function (nums, target) {};
 
 //One Loop
-var twoSum3 = function (nums, target) {
+var twoSum3 = function (nums, target) {};
 
-}
+let sub = "bce";
+let ori = "abcde";
 
-var nums = [2, 5, 3, 5];
-var target = 10;
+const subsequence = (sub, ori) => {
+  let oriIndex = 0,
+    subIndex = 0;
+
+  while (oriIndex < ori.length && subIndex < sub.length) {
+    if (ori[oriIndex] === sub[subIndex]) {
+      subIndex++;
+    }
+    oriIndex++;
+  }
+  return subIndex == sub.length;
+};
+
+let nums = [3, 1, 2, 7, 4, 2, 1, 1, 5];
+let k = 8;
+
+var findLength = function (nums, k) {
+  let left = 0,
+    answer = 0,
+    current = 0;
+
+  for (let right = 0; right < nums.length; right++) {
+    current += nums[right];
+    console.log("above while", current);
+    while (current > k) {
+      console.log("inside while", current);
+
+      current -= nums[left];
+      left++;
+    }
+    console.log("outside while", current);
+
+    answer = Math.max(answer, right - left + 1);
+  }d
+  return answer;
+};
+
+var findLength2 = function (nums, k) {
+  // curr is the current sum of the window
+  let left = 0,
+    curr = 0,
+    ans = 0;
+  for (let right = 0; right < nums.length; right++) {
+    curr += nums[right];
+    while (curr > k) {
+      curr -= nums[left];
+      left++;
+    }
+
+    ans = Math.max(ans, right - left + 1);
+  }
+
+  return ans;
+};
+
 //output [1,3]
-console.log(twoSum3(nums, target))
-
+console.log(findLength(nums, k));

@@ -26,37 +26,41 @@
 // Output: true
 
 let mapper = {
-    '(': ')',
-    '[': ']',
-    '{': '}'
-}
+  "(": ")",
+  "[": "]",
+  "{": "}",
+};
 var isValid = function (s) {
-    //stack[]
-    let stack = [];
-    //obj {} () []
+  //stack[]
+  let stack = [];
+  //obj {} () []
 
-    //loop s
-    for (const key in s) {
-        const currParenthese = s[key];
-        console.log(currParenthese)
-        //if current element is one of {([, push into stack
-        if (mapper[currParenthese]) {
-            stack.push(currParenthese);
-            console.log('stack: ', stack)
-        }    //else is it eaqul obj[curr] is pop() return false
-        else {
-            const peak = stack.pop();
-            console.log('peak: ', peak)
-            if (currParenthese !== mapper[peak]) {
-                return false;
-            }
-        }
-        //length>0 return false
+  //loop s
+  for (const key in s) {
+    const currParenthese = s[key];
+    console.log(currParenthese);
+    //if current element is one of {([, push into stack
+    if (mapper[currParenthese]) {
+      stack.push(currParenthese);
+      console.log("stack: ", stack);
+    } //else is it eaqul obj[curr] is pop() return false
+    else {
+      const peak = stack.pop();
+      console.log("peak: ", peak);
+      if (currParenthese !== mapper[peak]) {
+        return false;
+      }
     }
-    if (stack.length > 0) return false
-    return true;
+    //length>0 return false
+  }
+  if (stack.length > 0) return false;
+  return true;
 };
 
 let s = "{[(])}";
-console.log(isValid2(s))
+console.log(isValid(s));
+
+
+a = 1;
+a
 // Output: false
