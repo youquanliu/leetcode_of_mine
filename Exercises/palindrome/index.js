@@ -9,6 +9,7 @@
 
 str = "abcddcba";
 
+
 //Two pointers, one loop
 function palindrome(str) {
   let i = 0;

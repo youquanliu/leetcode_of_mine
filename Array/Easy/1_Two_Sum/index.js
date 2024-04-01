@@ -24,49 +24,43 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
+//brute force using indexOf
 var twoSum1 = function (nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        let complement = target - nums[i];
-        let found = nums.indexOf(complement, i + 1);
-        if (found !== -1) {
-            return [i, found]
-        }
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+    let found = nums.indexOf(complement, i + 1);
+    if (found !== -1) {
+      return [i, found];
     }
+  }
 };
+
+//Hashmap store complement
 var twoSum2 = function (nums, target) {
-    if (nums.length === 2) return [0, 1];
-    let obj = {};
-    for (let i = 0; i < nums.length; i++) {
-        obj[nums[i]] = i;
-    }
-    for (let i = 0; i < nums.length; i++) {
-        let complement = target - nums[i];
-        let found = obj[complement];
+  if (nums.length === 2) return [0, 1];
+  let obj = {};
+  for (let i = 0; i < nums.length; i++) {
+    obj[nums[i]] = i;
+  }
+  console.log(obj);
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+    let found = obj[complement];
 
-        if (found !== undefined && found != i) {
-            return [i, found];
-        }
+    if (found !== undefined && found != i) {
+      return [i, found];
     }
-    return [0, 0]
-}
+  }
+  return [0, 0];
+};
 
-var twoSum3 = function (nums, target) {
-    if (nums.length == 2) return [0, 1];
-    let obj = {};
-    for (let i = 0; i < nums.length; i++) {
-        let complement = target - nums[i];
-        let found = obj[complement];
-        if (found != undefined) return [i, found];
-        else obj[nums[i]] = i;
-    }
-}
-var nums = [2, 5, 3, 5];
-var target = 10;
+var nums = [2, 1, 3];
+var target = 6;
 
-console.log(twoSum3(nums, target))
+// y = target - x
+
 
 // 2  1,
 // 5  2,
 // 11 1,
 //target - obj[i]
-

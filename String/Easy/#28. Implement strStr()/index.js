@@ -8,7 +8,6 @@
 
 // For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
 
-
 // Example 1:
 // Input: haystack = "hello", needle = "ll"
 // Output: 2
@@ -27,48 +26,50 @@
 // haystack and needle consist of only lower-case English characters.
 
 var strStr = function (haystack, needle) {
-    if (needle == '') return 0;
-    //lenth of diff -? diffLen
-    const hayLen = haystack.length;
-    const ndLen = needle.length;
-    const diffLen = hayLen - ndLen;
+  if (needle == "") return 0;
+  //lenth of diff -? diffLen
+  const hayLen = haystack.length;
+  const ndLen = needle.length;
+  const diffLen = hayLen - ndLen;
 
-    //loop through diffLen
-    for (let i = 0; i < diffLen + 1; i++) {
-        if (needle == haystack.slice(i, ndLen + i)) {
-            return i;
-        }
+  //loop through diffLen
+  for (let i = 0; i < diffLen + 1; i++) {
+    if (needle == haystack.slice(i, ndLen + i)) {
+      return i;
     }
-    return -1;
-    //needle == haystack.slice(i,i+diffLen) ? return i : -1
+  }
+  return -1;
+  //needle == haystack.slice(i,i+diffLen) ? return i : -1
 };
 
 var strStr2 = function (haystack, needle) {
-    if (needle === '' || needle === haystack) return 0;    // the only mandatory check here is (needle === '')
-    if (haystack.length < needle.length) return -1;    // the other ones are for efficiency
+  if (needle === "" || needle === haystack) return 0; // the only mandatory check here is (needle === '')
+  if (haystack.length < needle.length) return -1; // the other ones are for efficiency
 
-    //loop haystack
-    for (let i = 0; i < haystack.length - needle.length + 1; i++) {
-        //once haystack[i] == needle[0]
-        if (haystack[i] === needle[0]) {
-            //loop through needle.length
-            for (let j = 0; j < needle.length; j++) {
-                //haystack[i+j] == needle[j]
-                if (haystack[i + j] !== needle[j]) {
-                    break;
-                } else if (j == needle.length - 1) {
-                    return i;
-                }
-            }
+  //loop haystack
+  for (let i = 0; i < haystack.length - needle.length + 1; i++) {
+    //once haystack[i] == needle[0]
+    if (haystack[i] === needle[0]) {
+      //loop through needle.length
+      for (let j = 0; j < needle.length; j++) {
+        //haystack[i+j] == needle[j]
+        if (haystack[i + j] !== needle[j]) {
+          break;
+        } else if (j == needle.length - 1) {
+          return i;
         }
+      }
     }
-    return -1;
+  }
+  return -1;
 };
-let haystack = "abc", needle = "c";
+let haystack = "abc",
+  needle = "c";
 // Output: 2
 
-console.log(strStr2(haystack, needle))
+console.log(strStr2(haystack, needle));
 
 // haystack 2 : needle 0
 // 3, 1
 // 4, 2 == needle.length - 1
+

@@ -10,7 +10,11 @@
 
 // O(n)
 let fibonacci = (n) => {
+<<<<<<< HEAD
   if (n <= 1) {
+=======
+  if (n < 2) {
+>>>>>>> 4c2445ce426a3f4b4e7a89710650dd51c62fbc58
     return n;
   }
   let fibResult = [0, 1];
@@ -24,6 +28,7 @@ let fibonacci = (n) => {
 // O(1) using two indexs
 let fibonacci2 = (n) => {
   if (n <= 1) {
+
     return n;
   }
 
@@ -67,4 +72,9 @@ function memoize(fn) {
 
 const fastFib = memoize(slowFib);
 
+<<<<<<< HEAD
 console.log(fibonacci2(9));
+=======
+//console.log(fastFib(30));
+// console.log(slowFib2(10));
+>>>>>>> 4c2445ce426a3f4b4e7a89710650dd51c62fbc58
