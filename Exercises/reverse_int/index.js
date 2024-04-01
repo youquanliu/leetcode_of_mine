@@ -20,5 +20,3 @@ const reverInt = (n) => {
 let rever = (n) => {
   //
 };
-
-console.log(reverInt(n));

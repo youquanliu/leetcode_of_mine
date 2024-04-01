@@ -8,6 +8,8 @@
 //   palindrome("abcdefg") === false
 
 str = "neverelereven";
+
+
 //Two pointers, one loop
 function palindrome(str) {
   let i = 0;
@@ -20,13 +22,13 @@ function palindrome(str) {
     i++;
     j--;
   }
-
-  //   for (let i = 0; i < strArr.length / 2; i++) {
-  //     if (strArr[i] !== strArr[strArr.length - 1 - i]) {
-  //       return false;
-  //     }
+  // let strArr = str.split("");
+  // for (let i = 0; i < strArr.length / 2; i++) {
+  //   if (strArr[i] !== strArr[strArr.length - 1 - i]) {
+  //     return false;
   //   }
-  return true;
+  // }
+  // return true;
 }
 
 //Compare the reversd str and origin str

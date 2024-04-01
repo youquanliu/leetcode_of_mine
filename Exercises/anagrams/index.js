@@ -20,6 +20,7 @@ let strMap = (str) => {
   for (const char of cleanedString) {
     charMap[char] = charMap[char] + 1 || 1;
   }
+
   return charMap;
 };
 

@@ -25,4 +25,6 @@ const fizzBuzz = (n) => {
   return n;
 };
 
-let num = 46;
+let num = 5;
+
+console.log(fizzBuzz(num));

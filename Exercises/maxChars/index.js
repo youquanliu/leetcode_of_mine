@@ -42,8 +42,6 @@ const maxChar1 = (str) => {
   return maxChar;
 };
 
-// console.log(maxChar1(str));
-
 let str = "caplle pabcccdp";
 
 let ma = (str) => {};
