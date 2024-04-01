@@ -10,11 +10,7 @@
 
 // O(n)
 let fibonacci = (n) => {
-<<<<<<< HEAD
   if (n <= 1) {
-=======
-  if (n < 2) {
->>>>>>> 4c2445ce426a3f4b4e7a89710650dd51c62fbc58
     return n;
   }
   let fibResult = [0, 1];
@@ -28,7 +24,6 @@ let fibonacci = (n) => {
 // O(1) using two indexs
 let fibonacci2 = (n) => {
   if (n <= 1) {
-
     return n;
   }
 
@@ -43,7 +38,6 @@ let fibonacci2 = (n) => {
 
   return current;
 };
-
 
 //The reason of naming it slowFib is because
 //slowFib is using a tree structure of recurion
@@ -72,15 +66,8 @@ function memoize(fn) {
 
 const fastFib = memoize(slowFib);
 
-
-let fibF = (n) => {
-  if (n < 2) {
-    return n;
-  }
-  return fibF(n - 2) + fibF(n - 1);
-};
+let fibF = (n) => {};
 
 const n = 10;
 console.log("fibonacci: ", fibonacci(n));
 console.log("fibF: ", fibF(n));
-

@@ -44,7 +44,29 @@ const maxChar1 = (str) => {
 
 let str = "caplle pabcccdp";
 
-let ma = (str) => {};
+//create a map, with char as key, apperant time as value
+//compare value, find the biggest one and return the key, which is the char
+let indexMap = (str) => {
+  let obj = {};
+  for (const char of str) {
+    obj[char] = obj[char] + 1 || 1;
+  }
+  return obj;
+};
+
+let ma = (str) => {
+  let map = indexMap(str);
+  let max = 0;
+  let targetChar = "";
+  for (const key in map) {
+    if (map[key] > max) {
+      max = map[key];
+      targetChar = key;
+    }
+  }
+  return targetChar;
+};
+
 
 console.log("ma: ", ma(str));
 console.log("maxChar: ", maxChar(str));
