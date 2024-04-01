@@ -54,13 +54,14 @@ var twoSum2 = function (nums, target) {
   return [0, 0];
 };
 
-var nums = [2, 1, 3];
+var nums = [2, 1, 3, 8, 7, 3];
 var target = 6;
 
 // y = target - x
 
+let two = (nums, target) => {
 
-// 2  1,
-// 5  2,
-// 11 1,
-//target - obj[i]
+};
+
+console.log("--------twoSum1: ", twoSum1(nums, target));
+console.log("--------two: ", two(nums, target));

@@ -58,4 +58,9 @@ let recirsopmSteps = (n, row = 0, stair = "") => {
   recirsopmSteps(n, row, stair);
 };
 
-steps(7);
+let myStep = (n) => {};
+const n = 7;
+console.log("steps: -----------");
+steps(n);
+console.log("My steps: -----------");
+myStep(n);

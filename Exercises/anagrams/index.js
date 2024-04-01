@@ -52,9 +52,7 @@ let anagrams2 = (stringA, stringB) => {
   return true;
 };
 
-const word1 = "rail safety1";
-const word2 = "fairy talesl";
-
-anagrams2(word1, word2);
+const word1 = "rail safety";
+const word2 = "fairy tales";
 
 console.log("anagrams2: ", anagrams2(word1, word2));

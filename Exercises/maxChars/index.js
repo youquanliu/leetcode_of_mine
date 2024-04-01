@@ -11,8 +11,6 @@ const maxChar = (str) => {
   let arr = str.split("");
   let tempMaxTimes = 1;
 
-  console.log(arr);
-
   for (let i = 0; i < arr.length; i++) {
     if (arr[i + 1] === arr[i]) {
       tempMaxTimes += 1;
@@ -48,4 +46,7 @@ const maxChar1 = (str) => {
 
 let str = "caplle pabcccdp";
 
+let ma = (str) => {};
 
+console.log("ma: ", ma(str));
+console.log("maxChar: ", maxChar(str));

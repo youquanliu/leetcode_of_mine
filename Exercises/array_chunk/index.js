@@ -18,4 +18,4 @@ let chunk = (a, size) => {
 
 let arr12 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log("chunk: ", chunk(arr12, 3));
+console.log("chunk: ", chunk(arr12, 30));

@@ -35,7 +35,7 @@
 // -104 <= nums[i] <= 104
 // nums is sorted in ascending order.
 
-var removeDuplicates = function (nums) {
+let removeDuplicates = (nums) => {
   // Two indexes  slow && fast
   // point to same value, f++
   // point to diff value, s & f++
@@ -47,15 +47,12 @@ var removeDuplicates = function (nums) {
     if (nums[fast] !== nums[slow]) {
       slow++;
       nums[slow] = nums[fast];
-
-      //or nums[++slow] = nums[fast];
     }
   }
-  return slow + 1, nums;
+  return slow + 1;
 };
-
-
-
 let nums = [0, 0, 1, 1, 2, 3];
-console.log(removeDuplicates(nums))
-// Output: 5
+
+
+//当有两个in-place function时，结果会不一样，所以下次练习时，把第一个function隐蔽掉
+console.log("removeDuplicates: ", removeDuplicates(nums));

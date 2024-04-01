@@ -32,4 +32,11 @@ const reverseString3 = (str) => {
   return reversed;
 };
 
-console.log(reverseString3(str));
+function reverseString4(str) {
+  for (let i = 0; i < Math.floor(str.length / 2); i++) {
+    const otherEnd = str.length - 1 - i;
+    [str[i], str[otherEnd]] = [str[otherEnd], str[i]];
+  }
+  return str;
+}
+console.log(reverseString4(str));

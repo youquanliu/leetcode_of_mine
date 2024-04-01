@@ -23,4 +23,7 @@ let capitalize = (str) => {
 };
 
 const str = "a lazy, fox";
+
+let cap = (str) => {};
 console.log("capitalize:", capitalize(str));
+console.log("cap: ", cap(str));

@@ -7,7 +7,7 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-str = "nevereereven";
+str = "neverelereven";
 //Two pointers, one loop
 function palindrome(str) {
   let i = 0;
@@ -35,4 +35,6 @@ function palindrome1(str) {
   return str === reversed;
 }
 
+let pali = (str) => {};
+console.log("pali: ", pali(str));
 console.log(palindrome(str));

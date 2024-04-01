@@ -56,3 +56,14 @@ const fastFib = memoize(slowFib);
 
 //console.log(fastFib(30));
 // console.log(slowFib2(10));
+
+let fibF = (n) => {
+  if (n < 2) {
+    return n;
+  }
+  return fibF(n - 2) + fibF(n - 1);
+};
+
+const n = 10;
+console.log("fibonacci: ", fibonacci(n));
+console.log("fibF: ", fibF(n));

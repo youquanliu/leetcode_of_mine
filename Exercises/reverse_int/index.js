@@ -14,9 +14,11 @@ let n = -51;
 //Use Math.sign to see if the input number is negtive
 const reverInt = (n) => {
   let result = parseInt(n.toString().split("").reverse().join(""));
-
-  return result * Math.sign(n);
+  return result;
 };
 
+let rever = (n) => {
+  //
+};
 
 console.log(reverInt(n));
