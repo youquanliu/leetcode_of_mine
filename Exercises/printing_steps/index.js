@@ -58,5 +58,4 @@ let recirsopmSteps = (n, row = 0, stair = "") => {
   recirsopmSteps(n, row, stair);
 };
 
-steps(7);
-
+steps(6);

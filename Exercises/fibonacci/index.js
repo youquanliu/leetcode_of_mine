@@ -8,7 +8,11 @@
 // Example:
 //   fib(4) === 3
 
+// O(n)
 let fibonacci = (n) => {
+  if (n <= 1) {
+    return n;
+  }
   let fibResult = [0, 1];
   for (let i = 2; i <= n; i++) {
     let nextInt = fibResult[i - 2] + fibResult[i - 1];
@@ -17,13 +21,24 @@ let fibonacci = (n) => {
   return fibResult[n];
 };
 
-
-let slowFib2 = (n) => {
-  if (n < 2) {
+// O(1) using two indexs
+let fibonacci2 = (n) => {
+  if (n <= 1) {
     return n;
   }
-  return slowFib2(n - 1) + slowFib2(n - 2);
+
+  let prev = 0;
+  let current = 1;
+
+  for (let i = 2; i <= n; i++) {
+    let nextInt = prev + current;
+    prev = current;
+    current = nextInt;
+  }
+
+  return current;
 };
+
 
 //The reason of naming it slowFib is because
 //slowFib is using a tree structure of recurion
@@ -52,5 +67,4 @@ function memoize(fn) {
 
 const fastFib = memoize(slowFib);
 
-console.log(fastFib(30));
-//console.log(slowFib2(30));
+console.log(fibonacci2(9));

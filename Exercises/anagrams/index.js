@@ -20,11 +20,11 @@ let strMap = (str) => {
   for (const char of cleanedString) {
     charMap[char] = charMap[char] + 1 || 1;
   }
+
   return charMap;
 };
 
 function anagrams1(stringA, stringB) {
-
   let cleanString1 = cleanString(stringA);
   let cleanString2 = cleanString(stringB);
 
@@ -37,7 +37,6 @@ function anagrams1(stringA, stringB) {
 }
 
 let anagrams2 = (stringA, stringB) => {
-
   let stringMapA = strMap(stringA);
   let stringMapB = strMap(stringB);
 
@@ -54,9 +53,7 @@ let anagrams2 = (stringA, stringB) => {
   return true;
 };
 
-const word1 = "rail ~safety!";
+const word1 = "rail safety";
 const word2 = "fairy tales";
 
-anagrams2(word1, word2);
-
-console.log("anagrams2: ", anagrams2(word1, word2));
+console.log("anagrams2(word1, word2);: ", anagrams2(word1, word2));

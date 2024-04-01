@@ -5,15 +5,11 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
-let str = "caple pabcccdp";
-
 const maxChar = (str) => {
   let repeatedChar = "";
   let maxTimes = 0;
   let arr = str.split("");
   let tempMaxTimes = 1;
-
-  console.log(arr);
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i + 1] === arr[i]) {
@@ -46,5 +42,6 @@ const maxChar1 = (str) => {
   return maxChar;
 };
 
-console.log(maxChar1(str));
+let str = "caple pabcdpcaab";
 
+console.log(maxChar(str));
