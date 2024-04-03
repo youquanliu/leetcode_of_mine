@@ -29,10 +29,12 @@ let pyramid = (n) => {
     console.log(level);
   }
 };
-
+let myPyramid = (n) => {};
 // n = row number
 // '   #   '   # number = 1 ' 'number = n-1
 // '  ###  '
 // ' ##### '
 // '#######'
-pyramid(7);
+const n = 7;
+pyramid(n);
+myPyramid(n);

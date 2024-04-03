@@ -35,24 +35,26 @@
 // -104 <= nums[i] <= 104
 // nums is sorted in ascending order.
 
-let removeDuplicates = (nums) => {
-  // Two indexes  slow && fast
-  // point to same value, f++
-  // point to diff value, s & f++
-  // fast reach the end of arr, return slow
+// let removeDuplicates = (nums) => {
+//   //   // Two indexes  slow && fast
+//   //   // point to same value, f++
+//   //   // point to diff value, s & f++
+//   //   // fast reach the end of arr, return slow
 
-  let slow = 0;
-  const size = nums.length;
-  for (let fast = 0; fast < size; fast++) {
-    if (nums[fast] !== nums[slow]) {
-      slow++;
-      nums[slow] = nums[fast];
-    }
-  }
-  return slow + 1;
-};
-let nums = [0, 0, 1, 1, 2, 3];
+//   let slow = 0;
+//   const size = nums.length;
+//   for (let fast = 0; fast < size; fast++) {
+//     if (nums[fast] !== nums[slow]) {
+//       slow++;
+//       nums[slow] = nums[fast];
+//     }
+//   }
+//   return slow + 1;
+// };
 
-
+let nums = [0, 0, 1, 2, 3];
+[];
+let re = (nums) => {};
 //当有两个in-place function时，结果会不一样，所以下次练习时，把第一个function隐蔽掉
-console.log("removeDuplicates: ", removeDuplicates(nums));
+//console.log("removeDuplicates: ", removeDuplicates(nums));
+console.log("re: ", re(nums));
