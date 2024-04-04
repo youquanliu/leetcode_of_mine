@@ -51,8 +51,9 @@ let removeDuplicates = (nums) => {
   }
   return slow + 1;
 };
-let nums = [0, 0, 1, 1, 2, 3];
+let nums = [0, 0, 0, 1, 1, 2, 3];
 
 
 //当有两个in-place function时，结果会不一样，所以下次练习时，把第一个function隐蔽掉
 console.log("removeDuplicates: ", removeDuplicates(nums));
+

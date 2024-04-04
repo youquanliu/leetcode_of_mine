@@ -9,7 +9,6 @@
 
 str = "neverelereven";
 
-
 //Two pointers, one loop
 function palindrome(str) {
   let i = 0;
@@ -28,7 +27,7 @@ function palindrome(str) {
   //     return false;
   //   }
   // }
-  // return true;
+  return true;
 }
 
 //Compare the reversd str and origin str
@@ -36,7 +35,7 @@ function palindrome1(str) {
   let reversed = str.split("").reverse().join("");
   return str === reversed;
 }
-
+//two pointers
 let pali = (str) => {};
 console.log("pali: ", pali(str));
-console.log(palindrome(str));
+console.log("palindrome:", palindrome(str));
