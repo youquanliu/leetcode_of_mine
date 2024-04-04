@@ -31,58 +31,85 @@
 // 1 <= s.length <= 1000
 // s contains lower-case English letters only.
 
-
 var largeGroupPositions = function (s) {
-    let countSameChar = 1;
-    let start = 0;
-    let ret = [];
-    for (let i = 1; i < s.length; i++) {
-        if (s[i] == s[i - 1]) {
-            countSameChar++
-            if (i == s.length - 1 && countSameChar >= 3) {
-                ret.push([start, start + countSameChar - 1])
-            }
-        } else if (s[i] != s[i - 1]) {
-            if (countSameChar >= 3) {
-                ret.push([start, start + countSameChar - 1])
-            }
-            countSameChar = 1;
-            start = i;
-        }
+  let countSameChar = 1;
+  let start = 0;
+  let ret = [];
+  for (let i = 1; i < s.length; i++) {
+    if (s[i] == s[i - 1]) {
+      countSameChar++;
+      if (i == s.length - 1 && countSameChar >= 3) {
+        ret.push([start, start + countSameChar - 1]);
+      }
+    } else if (s[i] != s[i - 1]) {
+      if (countSameChar >= 3) {
+        ret.push([start, start + countSameChar - 1]);
+      }
+      countSameChar = 1;
+      start = i;
     }
-    return ret
+  }
+  return ret;
 };
 const largeGroupPositions2 = function (S) {
-    const result = []
-    for (let i = 0; i < S.length; i++) {
-        const char = S[i]
-        let j = i
-        while (S[j + 1] === char) j++
-        if (j - i > 1) result.push([i, j])
-        i = j
-    }
-    return result
-}
+  const result = [];
+  for (let i = 0; i < S.length; i++) {
+    const char = S[i];
+    let j = i;
+    while (S[j + 1] === char) j++;
+    if (j - i > 1) result.push([i, j]);
+    i = j;
+  }
+  return result;
+};
 const largeGroupPositions3 = function (S) {
-    let count = 1, start = 0, result = [];
-    for (let i = 1; i < S.length; i++) {
-        if (S[i] === S[i - 1]) {
-            count++;
-            if (i == S.length - 1 && count >= 3) result = [...result, [start, start + count - 1]];
-
-        } else if (S[i] !== S[i - 1]) {
-            if (count >= 3) {
-                result = [...result, [start, start + count - 1]];
-            }
-            start = i;
-            count = 1;
-        }
+  let count = 1,
+    start = 0,
+    result = [];
+  for (let i = 1; i < S.length; i++) {
+    if (S[i] === S[i - 1]) {
+      count++;
+      if (i == S.length - 1 && count >= 3)
+        result = [...result, [start, start + count - 1]];
+    } else if (S[i] !== S[i - 1]) {
+      if (count >= 3) {
+        result = [...result, [start, start + count - 1]];
+      }
+      start = i;
+      count = 1;
     }
-    return result;
-}
-let s = "abbxxxxzzy";
-console.log(largeGroupPositions3(s))
-// Output: [[3,6]]
+  }
+  return result;
+};
+let s = "abbxxxxzzyyy";
 
+const lar = (s) => {
+  //two pointers
+  //create a variable gap= 3, result array
+  let result = [];
+  let count = 1;
+  //loop through the string
+  let slow = 0;
+  for (let fast = 1; fast <= s.length; fast++) {
+    //slow and fast are diff, move both
+    if (s[slow] !== s[fast]) {
+      if (count >= 3) {
+        result = [...result, [slow, fast - 1]];
+      }
+      slow = fast;
+      count = 1;
+    } else if (s[slow] == s[fast]) {
+      //they are same letter, move fast,
+      //if: 1. gap greater than three. add [slow, fast] to result
+      count++;
+    }
+  }
+  return result;
+};
+//
+
+console.log(largeGroupPositions3(s));
+// Output: [[3,6]]
+console.log("lar; ", lar(s));
 //start 0, res[]
 // bx, start 3

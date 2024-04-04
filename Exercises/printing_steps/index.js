@@ -20,11 +20,12 @@
 //Image we are creating a matrix with numbers of rows and column
 
 // + represents a space ' '
-// #++++
-// ##+++
-// ###++
-// ####+
-// #####
+// /01234
+// 0#++++
+// 1##+++
+// 2###++
+// 4####+
+// 5#####
 let steps = (n) => {
   for (let rowNum = 0; rowNum < n; rowNum++) {
     let stair = "";
