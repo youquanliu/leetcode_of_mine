@@ -27,21 +27,23 @@
 // Output: 0
 // Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
 
-var maxProfit = function (prices) {};
-
-let maxProfit2 = (prices) => {
+var maxProfit = function (prices) {
+  let buy = prices[0];
   let profit = 0;
-  let low_price = prices[0];
 
-  for (let cur = 1; cur < prices.length; cur++) {
-    low_price = Math.min(low_price, prices[cur]);
-    if (prices[cur] - low_price > 0) {
-      profit += prices[cur] - low_price;
-      low_price = prices[cur];
+  for (let i = 1; i < prices.length; i++) {
+    buy = Math.min(buy, prices[i]);
+
+    if (prices[i] - buy > 0) {
+      profit += prices[i] - buy;
+      buy = prices[i];
     }
   }
   return profit;
 };
+//Kadane's Algorithm
+//keep looking for lowest buying price, if cur price greater than buy price, sell it and set sell as curr
+let maxProfit2 = (prices) => {};
 // Output: 7
 const p1 = [7, 1, 5, 3, 6, 4];
 
@@ -49,3 +51,4 @@ const p1 = [7, 1, 5, 3, 6, 4];
 const p2 = [1, 2, 3, 4, 5];
 
 console.log("maxProfit2: ", maxProfit2(p2));
+console.log("maxProfit: ", maxProfit(p2));

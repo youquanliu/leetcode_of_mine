@@ -85,26 +85,6 @@ let s = "abbxxxxzzyyy";
 
 const lar = (s) => {
   //two pointers
-  //create a variable gap= 3, result array
-  let result = [];
-  let count = 1;
-  //loop through the string
-  let slow = 0;
-  for (let fast = 1; fast <= s.length; fast++) {
-    //slow and fast are diff, move both
-    if (s[slow] !== s[fast]) {
-      if (count >= 3) {
-        result = [...result, [slow, fast - 1]];
-      }
-      slow = fast;
-      count = 1;
-    } else if (s[slow] == s[fast]) {
-      //they are same letter, move fast,
-      //if: 1. gap greater than three. add [slow, fast] to result
-      count++;
-    }
-  }
-  return result;
 };
 //
 

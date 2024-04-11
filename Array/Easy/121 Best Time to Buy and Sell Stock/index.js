@@ -31,12 +31,23 @@ var maxProfit = function (prices) {
   return mostProfitable;
 };
 
-//keep looking for lowest price and calculating mbiggest profit
-var maxProfit2 = function (prices) {};
+//Kadane's Algorithm
+//keep looking for lowest buying price and calculating biggest profit
+var maxProfit2 = function (prices) {
+  let buy = prices[0],
+    profit = 0;
+  for (let i = 1; i < prices.length; i++) {
+    buy = Math.min(buy, prices[i]);
+    profit = Math.max(profit, prices[i] - buy);
+  }
+  return profit;
+};
 
+const ma = (prices) => {};
 // Output: 5
 const p1 = [7, 1, 5, 3, 6, 4];
 // Output: 0
 const p2 = [7, 6, 4, 3, 1];
 
-console.log("maxProfit: ", maxProfit2(p2));
+console.log("maxProfit2: ", maxProfit2(p2));
+console.log("ma: ", ma(p2));

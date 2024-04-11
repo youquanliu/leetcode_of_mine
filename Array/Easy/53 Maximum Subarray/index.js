@@ -51,6 +51,9 @@ let nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 // Output: 23
 let nums2 = [5, 4, -1, 7, 8];
 
+let nums3 = [-5, -4, -1, -7, -8];
+
+//
 const maxS = (nums) => {};
 
 console.log("maxSubArray2; ", maxSubArray2(nums2));
