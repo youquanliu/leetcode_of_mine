@@ -21,9 +21,10 @@
 
 // Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
 
+//************************* */
 //calulate left of i product 0~i-1
 //calulate right of i product i-1 ~ n.length -1
-//putiply left and right, store it in new array i
+//mutiply left and right, store it in new array i
 
 // Initialize the length of the input array nums to n.
 
@@ -62,7 +63,7 @@ let product = (nums) => {};
 const nums1 = [1, 2, 3, 4];
 // Output: [24,12,8,6]
 
-const nums2 = [-1, 1, 0, -3, 3];
+const nums2 = [1, 1, 0, 3, 3];
 // Output: [0,0,9,0,0]
 
 console.log("productExceptSelf: ", productExceptSelf(nums2));

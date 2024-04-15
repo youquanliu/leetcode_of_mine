@@ -47,14 +47,16 @@ function maxSubArray2(nums) {
 }
 
 // Output: 6
-let nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+let nums1 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 // Output: 23
 let nums2 = [5, 4, -1, 7, 8];
 
 let nums3 = [-5, -4, -1, -7, -8];
 
 //
-const maxS = (nums) => {};
+const maxS = (nums) => {
 
-console.log("maxSubArray2; ", maxSubArray2(nums2));
-console.log("maxS: ", maxS(nums2));
+};
+
+console.log("maxSubArray2; ", maxSubArray2(nums1));
+console.log("maxS: ", maxS(nums3));

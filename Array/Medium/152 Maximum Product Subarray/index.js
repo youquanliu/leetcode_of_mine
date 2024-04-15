@@ -36,23 +36,12 @@ var maxProduct = function (nums) {
   return ans;
 };
 
-var maxProduct2 = function (nums) {
-  let prevMax = nums[0];
-  let prevMin = nums[0];
-  let result = nums[0];
-  for (let i = 1; i < nums.length; i++) {
-    curMax = Math.max(nums[i] * prevMax, nums[i], nums[i] * prevMin);
+//the max product under conditions:1. +number times +number; 2.-numbers times -numbers; 3.number itself
+//hence, we will track 1. max number; 2.min number
+//Dynamically compare, min, max;
+//
 
-    curMin = Math.min(nums[i] * prevMin, nums[i], nums[i] * prevMax);
-
-    // updating the prevMax & prevMin, these two may swap locations
-    prevMax = curMax;
-    prevMin = curMin;
-
-    result = Math.max(curMax, result);
-  }
-  return result;
-};
+var maxProduct2 = function (nums) {};
 const nums1 = [2, 3, -2, 4];
 // Output: 6
 
@@ -63,3 +52,4 @@ const nums3 = [2, -5, -2, -4, 3];
 // Output: 24
 
 console.log("maxProduct: ", maxProduct(nums3));
+console.log("maxProduct2: ", maxProduct2(nums3));

@@ -7,30 +7,30 @@
 //output 3
 //Because 2,6,8,10 are all even number, only 3 is odd number
 function findOutlier(integers) {
-    let left = 0;
-    let right = integers.length - 1;
-    while (left < right) {
-        while (integers[left] % 2 == 0 && left < right) {
-            left++;
-        }
-        while (integers[right] % 2 == 1 && left < right) {
-            right--;
-        }
-        if (left < right) {
-            [integers[left], integers[right]] = [integers[right], integers[left]];
-            left++;
-            right--;
-        }
+  let left = 0;
+  let right = integers.length - 1;
+  while (left < right) {
+    while (integers[left] % 2 == 0 && left < right) {
+      left++;
     }
-    if (integers[0] % 2 == 0 && integers[1] % 2 == 0) {
-        return integers[integers.length - 1];
+    while (integers[right] % 2 == 1 && left < right) {
+      right--;
     }
-    return integers[0];
+    if (left < right) {
+      [integers[left], integers[right]] = [integers[right], integers[left]];
+      left++;
+      right--;
+    }
+  }
+  if (integers[0] % 2 == 0 && integers[1] % 2 == 0) {
+    return integers[integers.length - 1];
+  }
+  return integers[0];
 }
 
-function findOutlier2(nums) {
+function findOutlier2(nums) {}
 
-}
-
-let arr = [2, 5, 6, 8, 3, 10];
-console.log(findOutlier(arr))
+let arr1 = [2, 4, 6, 3, 4, 10];
+let arr2 = [1, 3, 5, 7, 9, 4, 11, 13, 17];
+console.log("findOutlier: ", findOutlier(arr2));
+console.log("findOutlier2: ", findOutlier2(arr2));

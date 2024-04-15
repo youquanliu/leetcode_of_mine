@@ -23,3 +23,27 @@
 // Input: nums = [11,13,15,17]
 // Output: 11
 // Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
+
+//Binary search
+//The key is to find mid-point in each interation
+var findMin = function (nums) {
+  let left = 0,
+    right = nums.length - 1;
+
+  while (left < right) {
+    let mid = left + Math.floor((right - left) / 2);
+    if (nums[mid] > nums[right]) {
+      left = mid + 1;
+    } else {
+      right = mid;
+    }
+  }
+  return nums[left];
+};
+
+const nums1 = [4, 5, 6, 7, 0, 1, 2];
+// Output: 0
+const nums2 = [11, 13, 15, 17];
+// Output: 11
+
+console.log("findMin: ", findMin(nums1));
