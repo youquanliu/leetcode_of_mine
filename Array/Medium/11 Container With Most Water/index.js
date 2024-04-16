@@ -20,9 +20,28 @@
 
 //max to track the most volumn,(index[j] - index i) * lower index
 
-var maxArea = function (height) {};
+var maxArea = function (heights) {
+  //two pointers, trangle area  = index diff * shorter number's bar
+
+  let i = 0,
+    j = heights.length - 1,
+    ans = 0;
+
+  while (i < j) {
+    let shorter = Math.min(heights[i], heights[j]);
+    ans = Math.max(ans, shorter * (j - i));
+
+    if (heights[i] < heights[j]) {
+      i++;
+    } else j--;
+  }
+  return ans;
+};
 
 const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 // Output: 49
+
+const height2 = [1, 2, 1];
+// Output: 2
 
 console.log("maxArea: ", maxArea(height1));

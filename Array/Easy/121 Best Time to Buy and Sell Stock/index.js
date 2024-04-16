@@ -32,7 +32,7 @@ var maxProfit = function (prices) {
 };
 
 //Kadane's Algorithm
-//keep looking for lowest buying price and calculating biggest profit
+//dynamicly looking for lowest buying price and calculating biggest profit
 var maxProfit2 = function (prices) {
   let buy = prices[0],
     profit = 0;

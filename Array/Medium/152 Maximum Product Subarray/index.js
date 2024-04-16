@@ -36,9 +36,9 @@ var maxProduct = function (nums) {
   return ans;
 };
 
-//the max product under conditions:1. +number times +number; 2.-numbers times -numbers; 3.number itself
-//hence, we will track 1. max number; 2.min number
-//Dynamically compare, min, max;
+// the max product under conditions:1. +number times +number; 2.-numbers times -numbers; 3.number itself
+// hence, we will track 1. max number; 2.min number
+// Dynamic compare, min, max;
 //
 
 var maxProduct2 = function (nums) {};

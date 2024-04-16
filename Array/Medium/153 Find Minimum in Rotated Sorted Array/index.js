@@ -46,4 +46,8 @@ const nums1 = [4, 5, 6, 7, 0, 1, 2];
 const nums2 = [11, 13, 15, 17];
 // Output: 11
 
-console.log("findMin: ", findMin(nums1));
+//Binary search
+const fid = (nums) => {};
+
+console.log("findMin: ", findMin(nums2));
+console.log("fid: ", fid(nums2));
