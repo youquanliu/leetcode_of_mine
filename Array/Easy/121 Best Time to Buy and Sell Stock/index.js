@@ -43,7 +43,9 @@ var maxProfit2 = function (prices) {
   return profit;
 };
 
-const ma = (prices) => {};
+const ma = (prices) => {
+  
+};
 // Output: 5
 const p1 = [7, 1, 5, 3, 6, 4];
 // Output: 0

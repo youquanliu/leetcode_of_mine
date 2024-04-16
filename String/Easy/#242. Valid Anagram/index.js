@@ -11,53 +11,57 @@
 // Input: s = "rat", t = "car"
 // Output: False
 
-
 function validAnagram1(a, b) {
-    //turn sreing into array
-    //sort
-    let arrA = [...a].sort();
-    let arrB = [...b].sort();
-    //compare
-    if (arrA.length !== arrB.length) {
-        return false
+  //turn sreing into array
+  //sort
+  let arrA = [...a].sort();
+  let arrB = [...b].sort();
+  //compare
+  if (arrA.length !== arrB.length) {
+    return false;
+  }
+  for (let i = 0; i < arrA.length; i++) {
+    if (arrA[i] !== arrB[i]) {
+      return false;
     }
-    for (let i = 0; i < arrA.length; i++) {
-        if (arrA[i] !== arrB[i]) {
-            return false;
-        }
-    }
-    return true;
+  }
+  return true;
 }
 
 const validAnagram2 = (a, b) => {
-    const sanitizeString = (str) => {
-        return str.toLowerCase().split('').sort().join('');
-    }
-    return sanitizeString(a) == sanitizeString(b);
-}
+  const sanitizeString = (str) => {
+    return str.toLowerCase().split("").sort().join("");
+  };
+  return sanitizeString(a) == sanitizeString(b);
+};
 
 const validAnagram3 = (a, b) => {
-    const createCharMap = (str) => {
-        let charMap = {};
-        for (const char of str) {
-            if (charMap.hasOwnProperty(char)) {
-                charMap[char]++;
-            } else {
-                charMap[char] = 1;
-            }
-        }
-        return charMap;
+  const createCharMap = (str) => {
+    let charMap = {};
+    for (const char of str) {
+      if (charMap.hasOwnProperty(char)) {
+        charMap[char]++;
+      } else {
+        charMap[char] = 1;
+      }
     }
-    if (a.length !== b.length) {
-        return false
-    }
+    return charMap;
+  };
+  if (a.length !== b.length) {
+    return false;
+  }
 
-    let objA = createCharMap(a);
-    let objB = createCharMap(b);
-    for (const char in objA) {
-        if (objA[char] !== objB[char]) {
-            return false;
-        }
+  let objA = createCharMap(a);
+  let objB = createCharMap(b);
+  for (const char in objA) {
+    if (objA[char] !== objB[char]) {
+      return false;
     }
-    return true;
-}
+  }
+  return true;
+};
+
+const s = "anagram",
+  t = "nagaram";
+// Output: True
+console.log("ana1: ", ana1(s, t));

@@ -58,7 +58,18 @@ var productExceptSelf = function (nums) {
   return result;
 };
 
-let product = (nums) => {};
+//rough idea:
+//create two arrs with same length of nums #prefix and #suffix
+//calculate each 's product of nums[i] in a loop
+//mutiply prefix and suffix together on nums[i] in aloop
+
+//inite these two array filled with 1
+//prefix array from nums 0 ~ i-1; suffix from i.length-1 ~ i+1
+
+//lets code and think on the way
+let product = (nums) => {
+  
+};
 
 const nums1 = [1, 2, 3, 4];
 // Output: [24,12,8,6]

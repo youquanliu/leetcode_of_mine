@@ -9,8 +9,8 @@ Array
 ✔Maximum Product Subarray
 ✔Find Minimum in Rotated Sorted Array
 ✔Search in Rotated Sorted Array
-3 Sum
-Container With Most Water
+✔3 Sum
+✔Container With Most Water
 
 Binary
 
@@ -74,9 +74,9 @@ String
 Longest Substring Without Repeating Characters
 Longest Repeating Character Replacement
 Minimum Window Substring
-Valid Anagram
+✔Valid Anagram
 Group Anagrams
-Valid Parentheses
+✔Valid Parentheses
 Valid Palindrome
 Longest Palindromic Substring
 Palindromic Substrings

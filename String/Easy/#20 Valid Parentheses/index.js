@@ -38,12 +38,12 @@ var isValid = function (s) {
   //loop s
   for (const key in s) {
     const currParenthese = s[key];
-    console.log(currParenthese);
+    console.log("currParenthese: ", currParenthese);
     //if current element is one of {([, push into stack
     if (mapper[currParenthese]) {
       stack.push(currParenthese);
       console.log("stack: ", stack);
-    } //else is it eaqul obj[curr] is pop() return false
+    } //else is it eaqul obj[curr] ? if so pop() return false
     else {
       const peak = stack.pop();
       console.log("peak: ", peak);
@@ -58,9 +58,8 @@ var isValid = function (s) {
 };
 
 let s = "{[(])}";
-console.log(isValid(s));
-
-
-a = 1;
-a
 // Output: false
+
+const is = (s) => {};
+console.log("is: ", is(s));
+console.log(isValid(s));

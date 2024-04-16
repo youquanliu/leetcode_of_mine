@@ -60,7 +60,10 @@ const nums2 = [4, 5, 6, 7, 0, 1, 2],
   target2 = 3;
 // Output: -1
 
+//binary search
+//the key is to find out which side of mid-point is sorted
+
 const sear = (nums, target) => {};
 
-console.log("search: ", search(nums1, target1));
-console.log("srear: ", sear(nums1, target1));
+console.log("search: ", search(nums2, target2));
+console.log("srea: ", sear(nums2, target2));

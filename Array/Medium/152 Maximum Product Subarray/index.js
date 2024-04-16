@@ -1,5 +1,4 @@
-// Given an integer array nums, find a
-// subarray
+// Given an integer array nums, find a subarray
 //  that has the largest product, and return the product.
 
 // The test cases are generated so that the answer will fit in a 32-bit integer.
@@ -41,7 +40,14 @@ var maxProduct = function (nums) {
 // Dynamic compare, min, max;
 //
 
-var maxProduct2 = function (nums) {};
+//the wau of generating largest product: 1, +times+; 2. -times-; 3.itself
+//kadane's algo. whinin one loop
+//find min num
+//find max num
+//
+var maxProduct2 = function (nums) {
+
+};
 const nums1 = [2, 3, -2, 4];
 // Output: 6
 

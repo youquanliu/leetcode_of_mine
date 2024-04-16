@@ -63,13 +63,16 @@ var strStr2 = function (haystack, needle) {
   }
   return -1;
 };
-let haystack = "abc",
-  needle = "c";
-// Output: 2
 
-console.log(strStr2(haystack, needle));
+let haystack = "abcclkcaiuwa",
+  needle = "ca";
+// Output: 6
+
+const strS = (heystack, needle) => {};
+
+console.log("strStr2: ", strStr2(haystack, needle));
+console.log("strS: ", strS(haystack, needle));
 
 // haystack 2 : needle 0
 // 3, 1
 // 4, 2 == needle.length - 1
-
