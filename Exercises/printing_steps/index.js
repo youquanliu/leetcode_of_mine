@@ -59,7 +59,10 @@ let recirsopmSteps = (n, row = 0, stair = "") => {
   recirsopmSteps(n, row, stair);
 };
 
-let myStep = (n) => {};
+let myStep = (n) => {
+
+  
+};
 const n = 7;
 console.log("steps: -----------");
 steps(n);

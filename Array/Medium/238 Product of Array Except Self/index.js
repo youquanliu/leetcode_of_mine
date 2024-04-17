@@ -55,27 +55,29 @@ var productExceptSelf = function (nums) {
   for (let i = 0; i < n; i++) {
     result[i] = right[i] * left[i];
   }
+
   return result;
 };
 
-//rough idea:
-//create two arrs with same length of nums #prefix and #suffix
-//calculate each 's product of nums[i] in a loop
-//mutiply prefix and suffix together on nums[i] in aloop
-
-//inite these two array filled with 1
-//prefix array from nums 0 ~ i-1; suffix from i.length-1 ~ i+1
-
-//lets code and think on the way
-let product = (nums) => {
-  
+//Brute force
+let productExceptSelf2 = (nums) => {
+  let res = [];
+  for (let i = 0; i < nums.length; i++) {
+    let newNum = 1;
+    for (let j = 0; j < nums.length; j++) {
+      if (i !== j) newNum *= nums[j];
+    }
+    res = [...res, newNum];
+  }
+  return res;
 };
 
-const nums1 = [1, 2, 3, 4];
+let product = (nums) => {};
+const nums1 = [2, 3, 4, 5];
 // Output: [24,12,8,6]
 
 const nums2 = [1, 1, 0, 3, 3];
 // Output: [0,0,9,0,0]
 
-console.log("productExceptSelf: ", productExceptSelf(nums2));
-console.log("product: ", product(nums2));
+console.log("productExceptSelf: ", productExceptSelf(nums1));
+console.log("product: ", product(nums1));

@@ -136,41 +136,14 @@ var threeSum2 = function (nums) {
   }
   return res;
 };
-const three_sum = (nums) => {
-  let result = [];
-  if (nums.length < 3) {
-    return [];
-  }
-  nums.sort((a, b) => a - b);
-  for (let i = 0; i < nums.length; i++) {
-    if (i > 0 && nums[i] === nums[i - 1]) {
-      continue;
-    }
-    let left = i + 1,
-      right = nums.length - 1;
-
-    while (left < right) {
-      let threeSum = nums[i] + nums[left] + nums[right];
-      if (threeSum > 0) right--;
-      else if (threeSum < 0) left++;
-      else {
-        result.push([nums[i], nums[left], nums[right]]);
-        left++;
-        while (left < right && nums[left] < nums[left - 1]) {
-          left++;
-        }
-      }
-    }
-  }
-  return result;
-};
+const three_sum = (nums) => {};
 
 const nums1 = [-1, 0, 1, 2, -1, -4];
 // Output  [[-1,-1,2],[-1,0,1]]
 const nums2 = [0, 1, 2];
 // Output: []
-
 const nums3 = [0, 0, 0];
 // Output: [[0,0,0]]
 
 console.log("threeSum: ", threeSum(nums1));
+console.log("three_sum: ", three_sum(nums1));

@@ -61,7 +61,9 @@ const validAnagram3 = (a, b) => {
   return true;
 };
 
+const anagram = (a, b) => {};
 const s = "anagram",
   t = "nagaram";
 // Output: True
-console.log("ana1: ", ana1(s, t));
+console.log("validAnagram1: ", validAnagram1(s, t));
+console.log("anagram: ", anagram(s, t));

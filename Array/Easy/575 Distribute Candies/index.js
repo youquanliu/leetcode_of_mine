@@ -36,11 +36,13 @@ var distributeCandies = function (candyType) {
     }
     let total = candyType.length / 2
     return Math.min(total, type)
-};
+}
+
 var distributeCandies2 = function (candyType) {
     let typeSet = new Set(candyType);
     return Math.min(typeSet.size, candyType.length / 2)
 }
+
 let candyType = [1, 1, 2, 3, 1, 2, 4, 5];
 console.log(distributeCandies2(candyType))
 //Output: 2

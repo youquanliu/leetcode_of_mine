@@ -40,14 +40,12 @@ var maxProduct = function (nums) {
 // Dynamic compare, min, max;
 //
 
-//the wau of generating largest product: 1, +times+; 2. -times-; 3.itself
+//the way of generating largest product: 1, +times+; 2. -times-; 3.itself
 //kadane's algo. whinin one loop
 //find min num
 //find max num
 //
-var maxProduct2 = function (nums) {
-
-};
+var maxProduct2 = function (nums) {};
 const nums1 = [2, 3, -2, 4];
 // Output: 6
 

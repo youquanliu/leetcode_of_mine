@@ -46,10 +46,7 @@ const nums1 = [4, 5, 6, 7, 0, 1, 2];
 const nums2 = [11, 13, 15, 17];
 // Output: 11
 
+const fid = (nums) => {};
 
-const fid = (nums) => {
-
-};
-
-console.log("findMin: ", findMin(nums1));
-console.log("fid: ", fid(nums1));
+console.log("findMin: ", findMin(n));
+console.log("fid: ", fid(n));
