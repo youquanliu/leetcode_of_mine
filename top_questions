@@ -5,13 +5,13 @@ Array
 ✔ M Best Time to Buy and Sell Stock II
 ✔ E Contains Duplicate
 ✔ M Product of Array Except Self ?
-✔ M Maximum Subarray                    
+✔ M Maximum Subarray ?                   
 ✔ M Maximum Product Subarray ?
 ✔ M 3 Sum ?
-✔ M Container With Most Water ?
-E Merge Sorted Array
-E Remove Element
-✔ E Remove duplicates from Sorted Array
+✔ M Container With Most Water 
+✔ E Merge Sorted Array ?
+✔ E Remove Element ?
+✔ E Remove duplicates from Sorted Array ?
 M Remove duplicates from Sorted Array II
 E Majority Element
 E Roman to Integer
@@ -23,7 +23,7 @@ String
 M Longest Substring Without Repeating Characters
 Longest Repeating Character Replacement
 H Minimum Window Substring
-E Valid Palindrome
+✔ E Valid Palindrome ?
 M Longest Palindromic Substring
 Palindromic Substrings
 Encode and Decode Strings (Leetcode Premium)
@@ -34,7 +34,7 @@ Hashmap
 ✔ M Group Anagrams ?
 
 Stack
-✔Valid Parentheses ?
+✔ Valid Parentheses ?
 
 Binary
 E Search Insert position

@@ -54,9 +54,10 @@ var isValid = function (s) {
   return true;
 };
 
-let s = "{[(])}";
+let s1 = "{[(])}";
 // Output: false
+let s2 = "[]({[]})";
 
 const is = (s) => {};
-console.log("is: ", is(s));
-console.log(isValid(s));
+console.log("isValid: ", isValid(s1));
+console.log("is: ", is(s1));

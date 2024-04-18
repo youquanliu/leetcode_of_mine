@@ -74,7 +74,7 @@ let productExceptSelf2 = (nums) => {
 
 let product = (nums) => {};
 const nums1 = [2, 3, 4, 5];
-// Output: [24,12,8,6]
+// Output: 60,40,30,24]
 
 const nums2 = [1, 1, 0, 3, 3];
 // Output: [0,0,9,0,0]

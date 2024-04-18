@@ -30,9 +30,7 @@ var groupAnagrams = function (strs) {
   return Object.values(map);
 };
 
-var groupAnagramsMap = (strs) => {
-
-};
+var groupAnagramsMap = (strs) => {};
 
 const strs = ["eta", "tae", "tan", "ate", "nat", "bat"];
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]

@@ -60,5 +60,5 @@ const containsDuplicate4 = (nums) => {
 };
 
 const co = (nums) => {};
-console.log("containsDuplicate2: ", containsDuplicate4(nums3));
-console.log("co: ", co(nums3));
+console.log("containsDuplicate2: ", containsDuplicate4(nums1));
+console.log("co: ", co(nums1));

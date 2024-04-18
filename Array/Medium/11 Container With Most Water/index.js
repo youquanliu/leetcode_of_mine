@@ -35,13 +35,6 @@ var maxArea = function (heights) {
   return ans;
 };
 
-//two pointers
-//one #left from start, #right from end of array; inite variable output;
-//loop while
-//volume of water is depends on the area of trangle which is: shorter num * index diff (right - left)
-//store the volume to final output if it is bigger than output
-//move the shorter index left or right
-
 const ma = (heights) => {};
 
 const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
@@ -50,5 +43,5 @@ const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 const height2 = [1, 2, 1];
 // Output: 2
 
-console.log("maxArea: ", maxArea(height1));
-console.log("ma: ", ma(height1));
+console.log("maxArea: ", maxArea(height2));
+console.log("ma: ", ma(height2));

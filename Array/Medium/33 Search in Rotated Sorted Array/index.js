@@ -19,13 +19,41 @@
 
 // Input: nums = [1], target = 0
 // Output: -1
+var search = function (nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
+  while (left <= right) {
+    let mid = left + Math.floor((right - left) / 2);
+    if (nums[mid] === target) {
+      return mid;
+    }
+    //left is sorted
+    if (nums[left] <= nums[mid]) {
+      if (target < nums[mid] && target >= nums[left]) {
+        right = mid - 1;
+      } else {
+        left = mid + 1;
+      }
+    }
+    //right is sorted
+    else {
+      if (target > nums[mid] && target <= nums[right]) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }
+  }
+  return -1;
+};
+var srea = function (nums, target) {};
 
-// One half (either the left or the right) will always be sorted.
-// Determining which half is sorted is crucial for our modified binary search.
+const nums1 = [4, 5, 6, 7, 0, 1, 2],
+  target1 = 0;
+// Output 4
+const nums2 = [2, 3, 3, 4, 5, 6, 1],
+  target2 = 1;
+// Output = 6
 
-var search = function (nums, target) {};
-
-console.log("search: ", search(nums2, target1));
-console.log("srea: ", sear(nums2, target1));
-
-//[2,3,3,4,5,6,1]
+console.log("search: ", search(nums1, target1));
+console.log("srea: ", srea(nums1, target1));
