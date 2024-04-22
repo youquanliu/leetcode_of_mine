@@ -57,3 +57,4 @@ const nums2 = [2, 3, 3, 4, 5, 6, 1],
 
 console.log("search: ", search(nums1, target1));
 console.log("srea: ", srea(nums1, target1));
+

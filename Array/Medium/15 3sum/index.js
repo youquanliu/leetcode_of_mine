@@ -143,8 +143,10 @@ const nums1 = [-1, 0, 1, 2, -1, -4];
 // Output  [[-1,-1,2],[-1,0,1]]
 const nums2 = [0, 1, 2];
 // Output: []
+const nums4 = [-2, 0, 0, 2, 2];
+// Output [[-2,0,2]]
 const nums3 = [0, 0, 0];
 // Output: [[0,0,0]]
 
-console.log("threeSum: ", threeSum(nums2));
-console.log("three_sum: ", three_sum(nums2));
+console.log("threeSum: ", threeSum(nums4));
+console.log("three_sum: ", three_sum(nums4));

@@ -59,3 +59,4 @@ let re = (nums) => {};
 //当有两个in-place function时，结果会不一样，所以下次练习时，把第一个function隐蔽掉
 //console.log("removeDuplicates: ", removeDuplicates(nums));
 console.log("re: ", re(nums));
+console.log(nums);

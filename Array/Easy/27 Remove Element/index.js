@@ -22,27 +22,19 @@
 // Note that the five elements can be returned in any order.
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
-var removeElement = function (nums, val) {
-  //two pointers
-  //left from 0, right from nums.length-1
-  //right = val, right --
-  //left = val and right != val, swap, left ++ , right --
-  //left != val left ++
-  //return left +1
+var removeElement1 = function (nums, val) {
+  let [left, right] = [0, 0];
 
-  let left = 0,
-    right = nums.length - 1;
-
-  while (left < right) {
-    if (nums[right] == val) right--;
-    else if (nums[left] !== val) left++;
-    else if (nums[left] == val && nums[right] !== val) {
-      [nums[left], nums[right]] = [nums[right], nums[left]];
-      left++;
-      right--;
+  while (right < nums.length) {
+    if (nums[right] !== val) {
+      nums[left] = nums[right];
+      left += 1;
     }
+
+    right += 1;
   }
-  return left + 1;
+
+  return left;
 };
 
 function removeElement2(nums, val) {
@@ -56,6 +48,8 @@ function removeElement2(nums, val) {
   return k;
 }
 
+const removeElement3 = (nums, val) => {};
+
 const nums1 = [0, 1, 2, 2, 3, 0, 4, 2],
   val1 = 2;
 // Output: 5, nums = [0,1,4,0,3,_,_,_]
@@ -63,5 +57,5 @@ const nums1 = [0, 1, 2, 2, 3, 0, 4, 2],
 const nums2 = [],
   val2 = 1;
 
-console.log("removeElement: ", removeElement2(nums1, val1));
+console.log("removeElement3: ", removeElement3(nums1, val1));
 console.log(nums1);

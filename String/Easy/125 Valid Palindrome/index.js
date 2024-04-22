@@ -1,4 +1,6 @@
-// A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+// A phrase is a palindrome if, after converting all uppercase letters into lowercase letters
+// and removing all non-alphanumeric characters, it reads the same forward and backward.
+// Alphanumeric characters include letters and numbers.
 
 // Given a string s, return true if it is a palindrome, or false otherwise.
 
@@ -38,10 +40,12 @@ var isPalindrome = function (s) {
   return rev_s === s;
 };
 
+const isPalindrome2 = (str) => {};
+
 const s1 = "A man, a plan, a canal: Panama";
 // Output: true
 
 const s2 = "race a car";
 // Output: false
 
-console.log("isPalindrome: ", isPalindrome(s2));
+console.log("isPalindrome2: ", isPalindrome2(s1));

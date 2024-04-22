@@ -1,4 +1,5 @@
-// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+// determine if the input string is valid.
 
 // An input string is valid if:
 
@@ -58,6 +59,6 @@ let s1 = "{[(])}";
 // Output: false
 let s2 = "[]({[]})";
 
-const is = (s) => {};
-console.log("isValid: ", isValid(s1));
-console.log("is: ", is(s1));
+const is = (str) => {};
+console.log("isValid: ", isValid(s2));
+console.log("is: ", is(s2));

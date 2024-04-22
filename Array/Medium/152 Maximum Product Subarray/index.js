@@ -51,5 +51,5 @@ const nums2 = [-2, 0, -1];
 const nums3 = [2, -5, -2, -4, 3];
 // Output: 24
 
-console.log("maxProduct: ", maxProduct(nums1));
-console.log("maxProduct2: ", maxProduct2(nums1));
+console.log("maxProduct: ", maxProduct(nums2));
+console.log("maxProduct2: ", maxProduct2(nums2));
