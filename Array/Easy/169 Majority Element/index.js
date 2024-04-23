@@ -54,4 +54,8 @@ const nums3 = [3, 3, 4];
 const nums4 = [6, 5, 5];
 // Output: 5
 
+//set a candidate and count the time of apperance of it
+const ma = (nums) => {};
+
 console.log("majorityElement: ", majorityElement(nums4));
+console.log("ma: ", ma(nums4));

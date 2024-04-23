@@ -4,25 +4,25 @@ Array
 ✔ E Best Time to Buy and Sell Stock I
 ✔ M Best Time to Buy and Sell Stock II
 ✔ E Contains Duplicate
-E Contains Duplicate II
+✔ E Contains Duplicate II ?
 ✔ M Product of Array Except Self ?
-✔ M Maximum Subarray ?                   
+✔ M Maximum Subarray                   
 ✔ M Maximum Product Subarray 
 ✔ M 3 Sum ?
 ✔ M Container With Most Water 
-✔ E Merge Sorted Array ?
+✔ E Merge Sorted Array
 ✔ E Remove Element ?
 ✔ E Remove duplicates from Sorted Array 
 M Remove duplicates from Sorted Array II
 ✔ E Majority Element ?
 ✔ E Roman to Integer ?
-E length of Last Word
-E Longest Common Prefix
+✔ E length of Last Word ?
+✔ E Longest Common Prefix ?
 
 String
 
 M Longest Substring Without Repeating Characters
-Longest Repeating Character Replacement
+M Longest Repeating Character Replacement
 H Minimum Window Substring
 ✔ E Valid Palindrome ?
 M Longest Palindromic Substring

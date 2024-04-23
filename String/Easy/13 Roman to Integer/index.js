@@ -70,13 +70,22 @@ var romanToInt = function (s) {
   return sum;
 };
 
-const roman = (str) => {};
+
+const roman = (str) => {
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (romanChar[str[i]] < romanChar[str[i + 1]]) {
+      sum -= romanChar[str[i]];
+    } else sum += romanChar[str[i]];
+  }
+  return sum;
+};
 
 let s1 = "MCMXCIV";
-// Output: 1984
+// Output: 1994
 
 const s2 = "IX";
 // Output: 9
 
-console.log("romanToInt(s): ", romanToInt(s2));
-console.log("roman: ", roman(s2));
+console.log("romanToInt(s): ", romanToInt(s1));
+console.log("roman: ", roman(s1));

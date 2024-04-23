@@ -55,5 +55,5 @@ let nums3 = [-5, -4, -1, -7, -8];
 
 const maxS = (nums) => {};
 
-console.log("maxSubArray2; ", maxSubArray2(nums1));
-console.log("maxS: ", maxS(nums1));
+console.log("maxSubArray2; ", maxSubArray2(nums2));
+console.log("maxS: ", maxS(nums2));

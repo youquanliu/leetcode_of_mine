@@ -34,14 +34,7 @@ var merge = function (nums1, m, nums2, n) {
   return nums1.sort();
 };
 
-const merge2 = (nums1, m, nums2, n) => {
-  //loop, index from m,
-  for (let i = m, j = 0; j < n; i++, j++) {
-    nums1[i] = nums2[j];
-  }
-
-  return nums1.sort();
-};
+const merge2 = (nums1, m, nums2, n) => {};
 
 const nums1 = [1, 2, 3, 0, 0, 0],
   m = 3,
@@ -54,6 +47,6 @@ const nums1 = [1, 2, 3, 0, 0, 0],
 //   nums2 = [1],
 //   n = 1;
 // Output: [1]
-console.log("merge: ", merge(nums1, m, nums2, n));
+//console.log("merge: ", merge(nums1, m, nums2, n));
 
 console.log("merge2: ", merge2(nums1, m, nums2, n));

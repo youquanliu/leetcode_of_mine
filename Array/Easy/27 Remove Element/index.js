@@ -30,7 +30,6 @@ var removeElement1 = function (nums, val) {
       nums[left] = nums[right];
       left += 1;
     }
-
     right += 1;
   }
 

@@ -16,28 +16,18 @@
 // Output: false
 
 var containsNearbyDuplicate = function (nums, k) {
-  //
-  let [left, right] = [0, 1];
-
-  while (right < nums.length) {
-    let sum = Math.abs(right - left);
-
-    let small_sum = 0;
-
-    if (nums[left] == nums[right] && sum <= k) {
+  const obj = {};
+  for (let i = 0; i < nums.length; i++) {
+    // Check if the difference betweend duplicates is less than k
+    if (i - obj[nums[i]] <= k) {
       return true;
-    } else right++;
+    }
+    obj[nums[i]] = i;
   }
-
-  let cur_small = 0,
-    small = 1;
-  for (let i = 1; i < nums.length; i++) {
-    cur_small = Math.min(cur_small, i);
-    small = Math.min(small, Math.abs(i - cur_small));
-  }
-  return small;
+  return false;
 };
 
+const con = (nums, k) => {};
 const nums1 = [1, 2, 3, 1, 2, 3],
   k1 = 2;
 // Output: false
@@ -50,4 +40,5 @@ const nums3 = [-1, -1],
   k3 = 1;
 //Output: true
 
-console.log("containsNearbyDuplicate: ", containsNearbyDuplicate(nums2, k2));
+console.log("containsNearbyDuplicate: ", containsNearbyDuplicate(nums1, k1));
+console.log("con: ", con(nums1, k1));

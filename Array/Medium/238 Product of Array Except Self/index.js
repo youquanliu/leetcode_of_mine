@@ -79,5 +79,5 @@ const nums1 = [2, 3, 4, 5];
 const nums2 = [1, 1, 0, 3, 3];
 // Output: [0,0,9,0,0]
 
-console.log("productExceptSelf: ", productExceptSelf(nums2));
-console.log("product: ", product(nums2));
+console.log("productExceptSelf: ", productExceptSelf(nums1));
+console.log("product: ", product(nums1));
