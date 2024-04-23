@@ -47,7 +47,9 @@ function removeElement2(nums, val) {
   return k;
 }
 
-const removeElement3 = (nums, val) => {};
+const removeElement3 = (nums, val) => {
+
+};
 
 const nums1 = [0, 1, 2, 2, 3, 0, 4, 2],
   val1 = 2;

@@ -72,7 +72,9 @@ let productExceptSelf2 = (nums) => {
   return res;
 };
 
-let product = (nums) => {};
+let product = (nums) => {
+  
+};
 const nums1 = [2, 3, 4, 5];
 // Output: 60,40,30,24]
 

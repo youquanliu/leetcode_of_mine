@@ -40,7 +40,9 @@ var isPalindrome = function (s) {
   return rev_s === s;
 };
 
-const isPalindrome2 = (str) => {};
+const isPalindrome2 = (str) => {
+  
+};
 
 const s1 = "A man, a plan, a canal: Panama";
 // Output: true

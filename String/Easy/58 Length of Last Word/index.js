@@ -17,14 +17,7 @@ var lengthOfLastWord = function (s) {
   return sArr[sArr.length - 1].length;
 };
 
-const length = (s) => {
-  //s -> arr
-  //arr[length -1 ]
-
-  let arr = s.trim().split(" ");
-  let last_word = arr[arr.length - 1];
-  return last_word.length;
-};
+const length = (s) => {};
 
 let s = "Hello World";
 //Output: 5
@@ -33,4 +26,4 @@ let a = "a ";
 let space = " ";
 
 console.log(lengthOfLastWord(a));
-console.log("length: ", length(space));
+console.log("length: ", length(a));

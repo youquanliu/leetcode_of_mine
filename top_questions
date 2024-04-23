@@ -15,16 +15,16 @@ Array
 ✔ E Remove duplicates from Sorted Array 
 M Remove duplicates from Sorted Array II
 ✔ E Majority Element ?
-✔ E Roman to Integer ?
-✔ E length of Last Word ?
-✔ E Longest Common Prefix ?
+✔ E Roman to Integer 
+✔ E length of Last Word
+✔ E Longest Common Prefix
 
 String
 
 M Longest Substring Without Repeating Characters
 M Longest Repeating Character Replacement
 H Minimum Window Substring
-✔ E Valid Palindrome ?
+✔ E Valid Palindrome
 M Longest Palindromic Substring
 Palindromic Substrings
 Encode and Decode Strings (Leetcode Premium)
@@ -32,15 +32,15 @@ E Find the index of the First Occurrence in a String
 
 Hashmap
 ✔ E Valid Anagram
-✔ M Group Anagrams ?
+✔ M Group Anagrams
 
 Stack
-✔ E Valid Parentheses ?
+✔ E Valid Parentheses
 
 Binary
 E Search Insert position
 ✔ M Find Minimum in Rotated Sorted Array
-✔ M Search in Rotated Sorted Array ?
+✔ M Search in Rotated Sorted Array
 M Find Peak Element
 M Find First and Last Position of Element in Sorted Array
 

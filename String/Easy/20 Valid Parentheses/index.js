@@ -59,6 +59,8 @@ let s1 = "{[(])}";
 // Output: false
 let s2 = "[]({[]})";
 
-const is = (str) => {};
+const is = (str) => {
+
+};
 console.log("isValid: ", isValid(s2));
 console.log("is: ", is(s2));
