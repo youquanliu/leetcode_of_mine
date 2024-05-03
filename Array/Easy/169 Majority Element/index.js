@@ -58,5 +58,5 @@ const nums3 = [3, 3, 4];
 // Output: 3
 const nums4 = [6, 5, 5];
 // Output: 5
-console.log("majorityElement: ", majorityElement(nums1));
-console.log("ma: ", ma(nums1));
+console.log("majorityElement: ", majorityElement(nums4));
+console.log("ma: ", ma(nums4));

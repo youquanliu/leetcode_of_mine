@@ -84,12 +84,12 @@ const largeGroupPositions3 = function (S) {
 let s = "abbxxxxzzyyy";
 
 const lar = (s) => {
-  //two pointers
+
 };
 //
 
 console.log(largeGroupPositions3(s));
 // Output: [[3,6]]
-console.log("lar; ", lar(s));
+console.log("lar: ", lar(s));
 //start 0, res[]
 // bx, start 3
