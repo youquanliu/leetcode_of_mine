@@ -1,20 +1,14 @@
-class Node {
-  constructor(data, next = null) {
-    this.data = data;
-    this.next = next;
-  }
-}
+class Node {}
 
 class LinkedList {
-  constructor() {
-    this.head = head;
-  }
+  constructor() {}
   getSize() {}
   getFirst() {}
   getLast() {}
   clear() {}
   removeFirst() {}
   removeLast() {}
+
   insertFirst(data) {}
   insertLast(data) {}
   getAt(i) {}
@@ -25,3 +19,16 @@ class LinkedList {
     return Node;
   }
 }
+
+const list = new LinkedList();
+list.insertFirst("3");
+list.insertFirst("2");
+list.insertFirst("1");
+
+console.log(list);
+console.log("getFirst: ", list.getFirst().data);
+console.log("getLast: ", list.getLast().data);
+console.log("insertLast: ", list.insertLast("last"));
+console.log("getLast: ", list.getLast().data);
+
+// console.log("getFirst: ", list.getFirst().data);

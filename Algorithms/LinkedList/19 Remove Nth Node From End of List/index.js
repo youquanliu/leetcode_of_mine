@@ -24,26 +24,29 @@ var removeNthFromEnd = function (head, n) {
   let fast = head,
     slow = head;
   for (let i = 0; i < n; i++) fast = fast.next;
+  console.log("fast: ", fast);
   if (!fast) return head.next;
   while (fast.next) (fast = fast.next), (slow = slow.next);
   slow.next = slow.next.next;
   return head;
 };
 
-function fromLast(list, n) {
-  let fast = list.head;
-  let slow = list.head;
+function fromLast(head, n) {
+  let fast = head;
+  let slow = head;
 
   while (n > 0) {
     fast = fast.next;
     n--;
   }
+  if (!fast) return head.next;
+
   while (fast.next) {
     slow = slow.next;
     fast = fast.next;
   }
   slow.next = slow.next.next;
-  return list;
+  return head;
 }
 
 fromLast(list, 2).data;
