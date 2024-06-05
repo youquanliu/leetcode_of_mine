@@ -60,7 +60,6 @@ var target = 6;
 // y = target - x
 
 let two = (nums, target) => {
-
 };
 
 console.log("--------twoSum1: ", twoSum1(nums, target));

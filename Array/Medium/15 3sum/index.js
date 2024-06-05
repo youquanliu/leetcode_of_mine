@@ -138,7 +138,8 @@ var threeSum2 = function (nums) {
 };
 // > square n
 const three_sum = (nums) => {
-  
+  //two loop
+
 };
 
 const nums1 = [-1, 0, 1, 2, -1, -4];

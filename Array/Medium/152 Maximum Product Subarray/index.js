@@ -40,7 +40,10 @@ var maxProduct = function (nums) {
 // Dynamic compare, min, max;
 //
 
-var maxProduct2 = function (nums) {};
+var maxProduct2 = function (nums) {
+  //kadane's algo
+
+};
 
 const nums1 = [2, 3, -2, 4];
 // Output: 6
@@ -51,5 +54,5 @@ const nums2 = [-2, 0, -1];
 const nums3 = [2, -5, -2, -4, 3];
 // Output: 24
 
-console.log("maxProduct: ", maxProduct(nums2));
-console.log("maxProduct2: ", maxProduct2(nums2));
+console.log("maxProduct: ", maxProduct(nums3));
+console.log("maxProduct2: ", maxProduct2(nums3));

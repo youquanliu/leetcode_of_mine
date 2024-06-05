@@ -35,7 +35,9 @@ var maxArea = function (heights) {
   return ans;
 };
 
-const ma = (heights) => {};
+const ma = (heights) => {
+
+};
 
 const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 // Output: 49
@@ -43,5 +45,5 @@ const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
 const height2 = [1, 2, 1];
 // Output: 2
 
-console.log("maxArea: ", maxArea(height2));
+console.log("maxArea: ", maxArea(height1));
 console.log("ma: ", ma(height2));

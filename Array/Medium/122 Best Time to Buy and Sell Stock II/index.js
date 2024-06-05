@@ -44,7 +44,9 @@ var maxProfit = function (prices) {
 //Kadane's Algorithm
 //keep looking for lowest buying price, if cur price greater than buy price, sell it and set sell as curr
 
-let maxProfit2 = (prices) => {};
+let maxProfit2 = (prices) => {
+  
+};
 // Output: 7
 const p1 = [7, 1, 5, 3, 6, 4];
 
