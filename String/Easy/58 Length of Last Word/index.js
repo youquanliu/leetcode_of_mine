@@ -19,7 +19,7 @@ var lengthOfLastWord = function (s) {
 
 const length = (s) => {};
 
-let s = "Hello World";
+let s = "Hello World ";
 //Output: 5
 
 let a = "a ";

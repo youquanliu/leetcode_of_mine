@@ -41,7 +41,7 @@ var isPalindrome = function (s) {
 };
 
 const isPalindrome2 = (str) => {
-  
+
 };
 
 const s1 = "A man, a plan, a canal: Panama";
@@ -50,4 +50,6 @@ const s1 = "A man, a plan, a canal: Panama";
 const s2 = "race a car";
 // Output: false
 
-console.log("isPalindrome2: ", isPalindrome2(s1));
+console.log("isPalindrome: ", isPalindrome(s2));
+
+console.log("isPalindrome2: ", isPalindrome2(s2));

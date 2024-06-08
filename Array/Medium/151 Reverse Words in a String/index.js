@@ -4,7 +4,9 @@
 
 // Return a string of the words in reverse order concatenated by a single space.
 
-// Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+// Note that s may contain leading or trailing spaces or multiple spaces between two words.
+//
+// The returned string should only have a single space separating the words. Do not include any extra spaces.
 
 // Example 1:
 
@@ -30,6 +32,9 @@ var reverseWords = function (s) {
   return res.join(" ");
 };
 
+const word = (s) => {
+
+};
 const s1 = "  hello world  ";
 // Output: "world hello"
 
@@ -37,3 +42,4 @@ const s2 = "a good   example";
 // Output: "example good a"
 
 console.log("reverseWords:", reverseWords(s1));
+console.log("word:", word(s1));

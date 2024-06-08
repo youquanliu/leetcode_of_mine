@@ -27,7 +27,8 @@ var containsNearbyDuplicate = function (nums, k) {
   return false;
 };
 
-const con = (nums, k) => {};
+const con = (nums, k) => {
+};
 
 const nums1 = [1, 2, 3, 1, 2, 3],
   k1 = 2;
