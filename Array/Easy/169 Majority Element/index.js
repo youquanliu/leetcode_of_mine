@@ -47,7 +47,9 @@ var majorityElement2 = function (nums) {
 
 //set a candidate and count the time of apperance of it
 //second meythod, object
-const ma = (nums) => {};
+const ma = (nums) => {
+  
+};
 
 const nums1 = [2, 2, 1, 1, 1, 2, 2];
 // Output: 2

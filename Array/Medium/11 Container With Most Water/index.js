@@ -15,8 +15,6 @@
 // Input: height = [1,1]
 // Output: 1
 
-//max to track the most volumn,(index[j] - index i) * lower index
-
 var maxArea = function (heights) {
   //two pointers, trangle area  = index diff * shorter number's bar
 
@@ -36,7 +34,29 @@ var maxArea = function (heights) {
 };
 
 const ma = (heights) => {
+  // formular: amount of water = (nums[i] - nums[i ]) * lower height
+  // two pointers, one from left moving to right; one from right moving to left
+  // calculate the amount of water in each step
+  // compare the current water with the max water, return max
 
+  let left = 0,
+    right = heights.length - 1,
+    max = 0;
+
+  while (left < right) {
+
+    let curAmount = (right - left) * Math.min(heights[left], heights[right]);
+    max = Math.max(max, curAmount);
+
+    if (heights[left] < heights[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return max;
+  
 };
 
 const height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
@@ -46,4 +66,4 @@ const height2 = [1, 2, 1];
 // Output: 2
 
 console.log("maxArea: ", maxArea(height1));
-console.log("ma: ", ma(height2));
+console.log("ma: ", ma(height1));

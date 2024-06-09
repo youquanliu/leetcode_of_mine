@@ -36,9 +36,10 @@ var maxProduct = function (nums) {
 };
 
 var maxProduct2 = function (nums) {
-  //kadane's algo
 
+  }
 
+  return result;
 };
 
 const nums1 = [2, 3, -2, 4];

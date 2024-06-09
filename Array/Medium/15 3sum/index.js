@@ -24,10 +24,6 @@
 // Output: [[0,0,0]]
 // Explanation: The only possible triplet sums up to 0.
 
-// fix one number and left two sums at hands
-// change the array order
-// hash map to speed up the search process
-
 function threeSum(nums) {
   const results = [];
 
@@ -137,7 +133,9 @@ var threeSum2 = function (nums) {
   return res;
 };
 // > square n
-const three_sum = (nums) => {};
+const three_sum = (nums) => {
+
+};
 
 const nums1 = [-1, 0, 1, 2, -1, -4];
 // Output  [[-1,-1,2],[-1,0,1]]
@@ -148,5 +146,5 @@ const nums4 = [-2, 0, 0, 2, 2];
 const nums3 = [0, 0, 0];
 // Output: [[0,0,0]]
 
-console.log("threeSum2: ", threeSum2(nums1));
+console.log("threeSum: ", threeSum(nums1));
 console.log("three_sum: ", three_sum(nums1));

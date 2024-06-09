@@ -6,11 +6,11 @@ Array
 ✔ E Contains Duplicate
 ✔ E Contains Duplicate II ?
 ✔ M Product of Array Except Self ?
-✔ M Maximum Subarray ?               
+✔ M Maximum Subarray             
 ✔ M Maximum Product Subarray ? 
 ✔ M 3 Sum ?
-✔ M Container With Most Water 
-✔ E Merge Sorted Array ?
+✔ M Container With Most Water ?
+✔ E Merge Sorted Array
 ✔ E Remove Element ?
 ✔ E Remove duplicates from Sorted Array ?
 M Remove duplicates from Sorted Array II
@@ -19,8 +19,8 @@ M Remove duplicates from Sorted Array II
 
 String
 
-✔ E Roman to Integer ? 
-✔ E length of Last Word ? 
+✔ E Roman to Integer
+✔ E length of Last Word
 ✔ M Reverse Words in a String ?
 M Longest Substring Without Repeating Characters
 M Longest Repeating Character Replacement
