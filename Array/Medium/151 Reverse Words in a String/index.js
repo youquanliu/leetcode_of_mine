@@ -33,7 +33,14 @@ var reverseWords = function (s) {
 };
 
 const word = (s) => {
-
+  arr = s.split(" ");
+  let res = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] !== "") {
+      res = [...res, arr[i]];
+    }
+  }
+  return res.join(" ");
 };
 const s1 = "  hello world  ";
 // Output: "world hello"
@@ -41,5 +48,5 @@ const s1 = "  hello world  ";
 const s2 = "a good   example";
 // Output: "example good a"
 
-console.log("reverseWords:", reverseWords(s1));
-console.log("word:", word(s1));
+console.log("reverseWords:", reverseWords(s2));
+console.log("word:", word(s2));

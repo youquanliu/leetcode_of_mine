@@ -42,13 +42,12 @@ var maxProfit2 = function (prices) {
   return profit;
 };
 
-const ma = (prices) => {
-};
+const ma = (prices) => {};
 
 // Output: 5
 const p1 = [7, 1, 5, 3, 6, 4];
 // Output: 0
 const p2 = [7, 6, 4, 3, 1];
 
-console.log("maxProfit2: ", maxProfit2(p1));
-console.log("ma: ", ma(p1));
+console.log("maxProfit2: ", maxProfit2(p2));
+console.log("ma: ", ma(p2));
