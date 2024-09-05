@@ -25,7 +25,6 @@
 //Solution One, use i+n as second index
 
 var shuffle = function (nums, n) {
-
 };
 
 //Solution Two, use slice to divide nums

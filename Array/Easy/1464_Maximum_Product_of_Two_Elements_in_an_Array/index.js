@@ -34,5 +34,5 @@ var maxProduct = function (nums) {
 
   return (max - 1) * (secondMax - 1);
 };
-
+console.log(': ', );
 
